@@ -1,0 +1,215 @@
+/* =====폰트===== */
+body{
+ margin: 0;
+ padding: 50px;
+ font-family: 'Assistant', sans-serif;
+ color: #2e2e2e;
+}
+/* a {
+  font-size: 24px;
+  color:black;
+  text-decoration: underline;
+  padding: 10px;
+} */
+a{
+  color: #2e2e2e;
+}
+
+.project-name{
+  font-size: 20px;
+  font-weight: bold;
+  display: inline;
+  position: relative;
+  left: 20px; top: 20px;
+}
+.m-link{
+  font-size: 20px;
+  text-decoration: underline;
+  text-decoration-color: #a1a1a1;
+  display: inline;
+  /* font-weight: 400; */
+}
+h1{
+  /* font-family: 'Assistant', sans-serif; */
+  font-size: 48px;
+  text-align: left;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+}
+h2{
+  /* font-family: 'Assistant', sans-serif; */
+  /* font-weight: 200; */
+  font-size: 48px;
+  text-align: left;
+  color: #1E67EA;
+  letter-spacing: -0.5px;
+  /* border-bottom: 0.5px solid rgba(0,0,0,0.3);
+  padding-bottom: 50px;
+  padding-top: 100px; */
+}
+h3{
+  /* font-family: 'Assistant', sans-serif; */
+}
+.subText{
+  /* font-family: 'Assistant', sans-serif; */
+  font-size: 16px;
+  opacity: 0.8
+}
+
+/* ========레이아웃 잡기======= */
+/* whole container */
+.w-container{
+  padding-top: 80px;
+  margin: auto;
+  max-width: 940px;
+  display: flex;
+  flex-direction: column;
+}
+.mezzanine{
+  margin-bottom: 100px;
+}
+
+/* flex 세팅 */
+.container{
+  display: flex;
+  justify-content: center;
+  /* width: 940px;
+  margin:auto; */
+}
+.item:nth-child(1){
+  flex-basis: 540px;
+  /* flex-shrink: 0; */
+  }
+.item:nth-child(2){
+  /* flex-shrink: 1; */
+  padding-top: 80px;
+  flex-basis: 400px;
+  }
+.item{
+  /* border: 1px solid blue; */
+}
+
+/* 반응형 */
+@media(max-width:800px){
+  .container{
+    flex-direction: column-reverse;
+    }
+  .item:nth-child(1), .item:nth-child(2){
+    flex-basis: auto;
+    }
+  .item:nth-child(2){
+    padding-top: 0;
+  }
+}
+
+/* =====이미지===== */
+.profile{
+  width: 240px;
+  /* float: right; */
+  display: block;
+  margin: auto;
+  padding-right: 80px;
+  padding-top: 80px;
+}
+
+/* =====박스 그리기===== */
+.bottom-container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* margin: auto; */
+}
+.project-box{
+  width: 460px;
+  height: 280px;
+  flex-shrink: 0;
+  background-color: #EEEEEE;
+  margin-top: 20px;
+  cursor: pointer;
+}
+#tplace{
+  background-size: cover;
+  background-image: url('/Users/minsangshin/Desktop/portfolio/code/images/tplace_main.jpg');
+}
+#hyundai-card-app{
+  background-size: cover;
+  background-image: url('/Users/minsangshin/Desktop/portfolio/code/images/hyundai-card-app.png');
+}
+#digital-hyundai-card{
+  background-size: cover;
+  background-image: url('/Users/minsangshin/Desktop/portfolio/code/images/digital-hyundai-card_main.png');
+  background-position: center;
+}
+#hyundai-certified-used-car{
+  background-size: 100%;
+  background-image: url('/Users/minsangshin/Desktop/portfolio/code/images/hyundai-certified-used-car_main.png');
+  /* background-position: 50% 95%; */
+  /* background-repeat: no-repeat; */
+}
+
+/* ===== hover 시 효과 ===== */
+.overlay {
+  /* position: absolute; */
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(1, 1, 1, 0.5);
+}
+.overlay:hover {
+  opacity: 1;
+}
+.text{
+  color: white;
+  font-size: 24px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  vertical-align: middle;
+  display: block;
+  text-decoration: none;
+  /* height: 100%; */
+}
+.link{
+  display: block;
+  height: 100%;
+}
+
+.project-thumbnail{
+  height: 280px;
+  /* float: right; */
+}
+img{
+  -webkit-filter: grayscale(50%);
+  filter: grayscale(50%);
+}
+
+
+
+/* #grid{
+  margin: auto;
+  display: grid;
+  grid-template-columns: 540px 1fr;
+} */
+/* width < 800 */
+@media(max-width:800px){
+  #grid{
+    display: block;
+  }
+}
+/* width > 1480인 경우 더 이상 stretch되지 않도록 */
+/* @media(min-width:1480px){
+  #grid{
+    display: grid;
+    grid-template-columns: 494px 494px 494px;
+  }
+}*/

@@ -1,0 +1,304 @@
+body{
+  margin: 0;
+  font-family: 'Noto Sans KR', 'Assistant', sans-serif;
+  color: #2E2E2E;
+}
+a{
+  text-decoration: none;
+}
+/* ===== top 버튼 ===== */
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: black; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+
+/* ===== 상단 영역 ===== */
+.hero-area{
+  width: 100%;
+  height: 560px;
+  background-color: black;
+  /* position: absolute; */
+  top: 0;
+  margin: 0 auto;
+  /* display: block; */
+}
+#ha-tplace{
+  background-color: #969696;
+}
+#ha-tplace div{
+  color: black;
+}
+#ha-tplace .project-name{
+  color: black;
+  opacity: 0.7;
+}
+.hero-content-container{
+  position: relative;
+  margin: auto;
+  width: 940px;
+  top: 60px;
+  /* height: 100%; */
+}
+.back{
+  cursor: pointer;
+}
+.hero-text{
+  position: relative;
+  color: white;
+  margin: 0 auto;
+  font-size: 48px;
+  top: 120px;
+  height: auto;
+}
+.project-name{
+  /* margin-top: 130px; */
+  font-size: 20px;
+  color: white;
+  opacity: 0.7;
+  /* float: left; */
+  top: 130px;
+  position: relative;
+}
+.project-icon{
+  float: right;
+  margin: 0;
+}
+.hero-text img{
+  float: right;
+}
+
+/* ===== mezzanine 영역 ===== */
+.mezzanine-area{
+  width: 100%;
+  height: 340px;
+  background-color: #CECECE;
+  /* position: absolute; */
+  top: 540px;
+}
+.tooltip{
+  vertical-align: sub;
+  display: inline-block;
+  padding-left: 5px;
+  position: relative;
+}
+.tooltiptext{
+  visibility: hidden;
+  width: max-content;
+  background-color: black;
+  color: #fff;
+  /* text-align: center; */
+  border-radius: 6px;
+  padding: 5px 15px;
+  font-size: 16px;
+  font-weight: 300;
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  left: 110%;
+}
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+.title_small{
+  position: relative;
+  width: 940px;
+  margin: 0 auto;
+  top: 60px;
+  font-weight: 500;
+  opacity: 0.5;
+  font-size: 20px;
+  align-content: center;
+}
+
+.ah-container{
+  display: flex;
+  width: 940px;
+  margin: 0 auto;
+  top: 80px;
+  position: relative;
+}
+.ah-item{
+  flex-basis: 33%;
+}
+.ah-figure{
+  font-size: 64px;
+  margin: 0 auto;
+  font-weight: 400;
+}
+.ah-caption{
+  font-size: 24px;
+  margin: 0 auto;
+  font-weight: 300;
+}
+
+/* ===== 본문 영역 ===== */
+.body-content{
+  width: 940px;
+  height: auto;
+  margin: 0 auto;
+  /* border: 2px solid red; */
+  /* position: relative; */
+  top: 880px;
+  padding: 40px;
+}
+dt{
+  font-size: 56px;
+  float: left;
+  font-weight: 500;
+  display: inline-block;
+  width: 300px;
+  margin-top: -8px;
+  line-height: 130%;
+  word-break: keep-all;
+}
+dd{
+  margin-left: 320px;
+}
+dd p{
+  letter-spacing: -0.3px;
+  font-size: 18px;
+  line-height: 32px;
+}
+dd br{
+  line-height: 220%;
+}
+dl img{
+  width: 100%;
+  margin-top: 30px;
+}
+.highlight{
+  background-color: rgba(255, 0, 0, 0.2);
+}
+
+/* ===== footer 영역 ===== */
+.footer-area{
+  width: 100%;
+  height: 640px;
+  position: relative;
+}
+.footer-area img{
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  vertical-align: top;
+}
+.footer-content{
+  width: 940px;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.footer-content dt{
+  /* display: inline-block; */
+  /* float: left; */
+  font-weight: 400;
+  width: 30%;
+  padding: 0;
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 36px;
+}
+.footer-content dd{
+  /* margin-left: 160px; */
+  font-weight: 300;
+  padding: 0;
+  margin: 0 auto;
+  /* float: right; */
+  width: 70%;
+  font-size: 18px;
+  line-height: 36px;
+  /* display: inline; */
+}
+.footer-content dl{
+  width: 50%;
+  color: #ffffff;
+  height: 100%;
+  /* overflow: hidden; */
+  margin: 0;
+  /* padding-bottom: 20px; */
+}
+.footer-content dl:first-child{
+  padding-bottom: 32px;
+}
+
+.footer-link-box{
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  position: absolute;
+  bottom: 0%;
+  right: 0%;
+  height: 80px;
+  width: 320px;
+  /* float: right; */
+  /* font-size: 18px;
+  font-weight: 400;
+  color: #ffffff; */
+  /* vertical-align: middle; */
+  /* text-align: left; */
+  box-sizing: border-box;
+  padding: 20px;
+  /* display: flex; */
+  margin-bottom: 8px;
+}
+.footer-link-box p{
+  font-size: 18px;
+  font-weight: 400;
+  color: #ffffff;
+  /* vertical-align: middle; */
+  /* display: inline-block; */
+  /* height: auto; */
+  margin: 0;
+  margin-left: 20px;
+  /* width: auto; */
+  float: left;
+  /* flex-basis: 120px; */
+  line-height: 2.0;
+  width: 40%;
+}
+.footer-link-box a{
+  /* flex-basis: 60px; */
+  /* cursor: pointer; */
+  display: inline-block;
+  margin: 0 10px;
+}
+.footer-link-box img{
+  cursor: pointer;
+}
+
+/* =====사진 3개 연속해서 보여주기===== */
+.row {
+  display: flex;
+}
+.column {
+  width: 100%;
+  height: auto;
+}
+.column:nth-child(1){
+  /* flex: clac(3883/5166); */
+  flex: 0.751;
+}
+.column:nth-child(2){
+  /* flex: clac(6480/4261); */
+  flex: 1.521;
+}
+.column:nth-child(3){
+  /* flex: clac(6350/4720); */
+  flex: 1.345;
+}
