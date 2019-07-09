@@ -130,20 +130,20 @@ h3{
 }
 #tplace{
   background-size: cover;
-  background-image: url('/Users/minsangshin/Desktop/portfolio/code/images/tplace_main.jpg');
+  background-image: url('images/tplace_main.jpg');
 }
 #hyundai-card-app{
   background-size: cover;
-  background-image: url('/Users/minsangshin/Desktop/portfolio/code/images/hyundai-card-app.png');
+  background-image: url('images/hyundai-card-app.png');
 }
 #digital-hyundai-card{
   background-size: cover;
-  background-image: url('/Users/minsangshin/Desktop/portfolio/code/images/digital-hyundai-card_main.png');
+  background-image: url('images/digital-hyundai-card_main.png');
   background-position: center;
 }
 #hyundai-certified-used-car{
   background-size: 100%;
-  background-image: url('/Users/minsangshin/Desktop/portfolio/code/images/hyundai-certified-used-car_main.png');
+  background-image: url('images/hyundai-certified-used-car_main.png');
   /* background-position: 50% 95%; */
   /* background-repeat: no-repeat; */
 }
