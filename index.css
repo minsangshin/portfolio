@@ -83,33 +83,16 @@ h3{
 .item:nth-child(2){
   /* flex-shrink: 1; */
   padding-top: 80px;
-  flex-basis: 400px;
-  }
-.item{
-  /* border: 1px solid blue; */
-}
-
-/* 반응형 */
-@media(max-width:800px){
-  .container{
-    flex-direction: column-reverse;
-    }
-  .item:nth-child(1), .item:nth-child(2){
-    flex-basis: auto;
-    }
-  .item:nth-child(2){
-    padding-top: 0;
-  }
-}
-
-/* =====이미지===== */
-.profile{
+  /* flex-basis: 400px; */
   width: 240px;
   /* float: right; */
   display: block;
   margin: auto;
   padding-right: 80px;
   padding-top: 80px;
+  }
+.item:nth-child(2) img{
+  width: 100%;
 }
 
 /* =====박스 그리기===== */
@@ -127,22 +110,25 @@ h3{
   background-color: #EEEEEE;
   margin-top: 20px;
   cursor: pointer;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 #tplace{
-  background-size: cover;
+  /* background-size: cover; */
   background-image: url('images/tplace_main.png');
 }
 #hyundai-card-app{
-  background-size: cover;
+  /* background-size: cover; */
   background-image: url('images/hyundai-card-app_main.jpg');
 }
 #digital-hyundai-card{
-  background-size: cover;
+  /* background-size: cover; */
   background-image: url('images/digital-hyundai-card_main.png');
-  background-position: center;
+  /* background-position: center; */
 }
 #hyundai-certified-used-car{
-  background-size: 100%;
+  /* background-size: 100%; */
   background-image: url('images/hyundai-certified-used-car_main.png');
   /* background-position: 50% 95%; */
   /* background-repeat: no-repeat; */
@@ -150,7 +136,7 @@ h3{
 
 /* ===== hover 시 효과 ===== */
 .overlay {
-  /* position: absolute; */
+  /* position: relative; */
   top: 0;
   bottom: 0;
   left: 0;
@@ -200,8 +186,8 @@ img{
   display: grid;
   grid-template-columns: 540px 1fr;
 } */
-/* width < 800 */
-@media(max-width:800px){
+/* width < 767 */
+@media(max-width:767px){
   #grid{
     display: block;
   }
@@ -213,3 +199,40 @@ img{
     grid-template-columns: 494px 494px 494px;
   }
 }*/
+
+
+/* ========== 반응형 ========== */
+@media(max-width:767px){ /* width 767px이하일 떄 */
+  .container{
+    flex-direction: column-reverse;
+    }
+  .item:nth-child(1), .item:nth-child(2){
+    flex-basis: auto;
+    }
+  .item:nth-child(2){
+    padding-top: 40px;
+    margin-bottom: 100px;
+    position: absolute;
+    margin-left: 0;
+    top: 0;
+    display: block;
+  }
+  /* bottom부분 반응형 */
+  body{
+    padding: 0 20px;
+  }
+  .w-container{
+    width: 100%
+    margin: auto;
+  }
+  .project-box{
+    width: 100%;
+    height: auto; /* 상속받지 않도록 초기화*/
+    padding-top: 56.25%;
+    position: relative;
+  }
+  .overlay{
+    position: absolute;
+    opacity: 0.8;
+  }
+}
