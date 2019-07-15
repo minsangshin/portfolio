@@ -64,6 +64,7 @@ h3{
   max-width: 940px;
   display: flex;
   flex-direction: column;
+  margin-bottom: 60px;
 }
 .mezzanine{
   margin-bottom: 100px;
@@ -216,6 +217,7 @@ img{
     margin-left: 0;
     top: 0;
     display: block;
+    width: 160px;
   }
   /* bottom부분 반응형 */
   body{
@@ -234,5 +236,11 @@ img{
   .overlay{
     position: absolute;
     opacity: 0.8;
+  }
+  h1{
+    font-size: 24px;
+  }
+  h2{
+    font-size: 24px;
   }
 }
