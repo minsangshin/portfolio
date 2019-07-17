@@ -6,6 +6,11 @@ body{
 a{
   text-decoration: none;
 }
+img{
+  max-width: 100%;
+  height: auto;
+}
+
 /* ===== top 버튼 ===== */
 #myBtn {
   display: none; /* Hidden by default */
@@ -22,14 +27,13 @@ a{
   border-radius: 10px; /* Rounded corners */
   font-size: 18px; /* Increase font size */
 }
-
 #myBtn:hover {
   background-color: #555; /* Add a dark-grey background on hover */
 }
 
 /* ===== 상단 영역 ===== */
 .hero-area{
-  /* width: 100%;  */
+  width: auto;
   height: 560px;
   background-color: black;
   /* position: absolute; */
@@ -57,63 +61,40 @@ a{
 .back{
   cursor: pointer;
 }
+.project-icon{
+  float: right;
+  margin: 0;
+}
 .hero-text{
   position: relative;
   color: white;
   margin: 0 auto;
-  font-size: 48px;
+  font-size: 3rem;
   top: 120px;
   height: auto;
 }
+.hero-text img{
+  float: right;
+}
 .project-name{
   /* margin-top: 130px; */
-  font-size: 20px;
+  /* font-size: 20px; */
+  font-size: 1.25rem;
   color: white;
   opacity: 0.7;
   /* float: left; */
   top: 130px;
   position: relative;
 }
-.project-icon{
-  float: right;
-  margin: 0;
-}
-.hero-text img{
-  float: right;
-}
+
 
 /* ===== mezzanine 영역 ===== */
 .mezzanine-area{
-  width: 100%;
+  max-width: 100%;
   height: 340px;
   background-color: #CECECE;
   /* position: absolute; */
   top: 540px;
-}
-.tooltip{
-  vertical-align: sub;
-  display: inline-block;
-  padding-left: 5px;
-  position: relative;
-}
-.tooltiptext{
-  visibility: hidden;
-  width: max-content;
-  background-color: black;
-  color: #fff;
-  /* text-align: center; */
-  border-radius: 6px;
-  padding: 5px 15px;
-  font-size: 16px;
-  font-weight: 300;
-  /* Position the tooltip */
-  position: absolute;
-  z-index: 1;
-  top: -5px;
-  left: 110%;
-}
-.tooltip:hover .tooltiptext {
-  visibility: visible;
 }
 .title_small{
   position: relative;
@@ -122,9 +103,52 @@ a{
   top: 60px;
   font-weight: 500;
   opacity: 0.5;
-  font-size: 20px;
+  /* font-size: 20px; */
+  font-size: 1.25rem;
   align-content: center;
 }
+.tooltip{
+  vertical-align: bottom;
+  display: inline-block;
+  margin-left: 5px;
+  position: relative;
+  width: 1.5rem;
+  height: 24px;
+  width: 24px;
+  box-sizing: content-box;
+  background-image: url("images/info_icon.png");
+  background-size: cover;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+}
+.tooltiptext{
+  /* visibility: hidden; */
+  display: none;
+  width: max-content;
+  background-color: black;
+  color: #fff;
+  /* text-align: center; */
+  border-radius: 6px;
+  padding: 5px 15px;
+  /* font-size: 16px; */
+  font-size: 1rem;
+  font-weight: 300;
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  left: 110%;
+}
+/* .tooltip:hover + .tooltiptext {
+  display: inline;
+  position: relative;
+  left: auto;
+  right: 30px;
+  top: 32px;
+} */
 
 .ah-container{
   display: flex;
@@ -137,12 +161,14 @@ a{
   flex-basis: 33%;
 }
 .ah-figure{
-  font-size: 64px;
+  /* font-size: 64px; */
+  font-size: 4rem;
   margin: 0 auto;
   font-weight: 400;
 }
 .ah-caption{
-  font-size: 24px;
+  /* font-size: 24px; */
+  font-size: 1.5rem;
   margin: 0 auto;
   font-weight: 300;
 }
@@ -158,7 +184,8 @@ a{
   padding: 40px;
 }
 dt{
-  font-size: 56px;
+  /* font-size: 56px; */
+  font-size: 3.5rem;
   float: left;
   font-weight: 500;
   display: inline-block;
@@ -172,7 +199,8 @@ dd{
 }
 dd p{
   letter-spacing: -0.3px;
-  font-size: 18px;
+  /* font-size: 18px; */
+  font-size: 1.125rem;
   line-height: 32px;
 }
 dd br{
@@ -213,8 +241,9 @@ dl img{
   width: 30%;
   padding: 0;
   margin: 0 auto;
-  font-size: 18px;
-  line-height: 36px;
+  /* font-size: 18px; */
+  font-size: 1.125rem;
+  line-height: 2.25rem; /* 36px */
 }
 .footer-content dd{
   /* margin-left: 160px; */
@@ -223,8 +252,9 @@ dl img{
   margin: 0 auto;
   /* float: right; */
   width: 70%;
-  font-size: 18px;
-  line-height: 36px;
+  /* font-size: 18px; */
+  font-size: 1.125rem;
+  line-height: 2.25rem; /* 36px */
   /* display: inline; */
 }
 .footer-content dl{
@@ -258,7 +288,8 @@ dl img{
   margin-bottom: 8px;
 }
 .footer-link-box p{
-  font-size: 18px;
+  /* font-size: 18px; */
+  font-size: 1.125rem;
   font-weight: 400;
   color: #ffffff;
   /* vertical-align: middle; */
@@ -301,4 +332,210 @@ dl img{
 .column:nth-child(3){
   /* flex: clac(6350/4720); */
   flex: 1.345;
+}
+
+/* ========== 반응형 ========== */
+@media(max-width:767px){ /* width 767px이하일 떄 */
+  html{
+    font-size: 12px;
+  }
+  .w-container{
+    /* position: relative; */
+    max-width: 100%;
+    margin: auto;
+  }
+  .hero-area{
+    height: 480px;
+  }
+  .hero-content-container{
+    padding: 0 20px;
+    max-width: 100%;
+    box-sizing: border-box; /* padding까지 포함한 width = max-width 되도록 */
+    top: 40px;
+  }
+  .hero-text{
+    word-break: keep-all;
+    top: auto;
+  }
+  .hero-text img{
+    float: left;
+  }
+  .project-icon{
+    float: none;
+    display: block;
+    padding-top: 60px;
+    width: 80px;
+  }
+  .project-name{
+    top: 10px;
+  }
+  /* mezzanine */
+  .mezzanine-area{
+    padding: 20px;
+    margin-bottom: 20px; /* mobile 버전에서 body-content와의 간격 확보 */
+  }
+  .title_small{
+    max-width: 100%;
+    margin: auto;
+    top: 20px;
+    border-bottom: 1px solid gray; /* 가로선 */
+    padding-bottom: 6px;
+  }
+  .tooltip{
+    right: 0;
+    width: 22px; /* .tooltip img가 너무 작아서 별도 지정 */
+    height: 22px;
+    position: absolute;
+    /* background-image: url("images/info_icon.png"); */
+    /* background-size: cover; */
+    /* background-color: transparent;
+    background-repeat: no-repeat;
+    border: 0; */
+  }
+  .tooltiptext{
+    top: 28px;
+    right: 0;
+    left: auto;
+  }
+  .ah-container{
+    max-width: 100%;
+    top: 40px;
+    flex-direction: column;
+  }
+  .ah-item{
+    display: flex;
+    flex-basis: auto;
+    margin-bottom: 20px;
+  }
+  .ah-figure{
+    margin: 0;
+    font-weight: 500;
+    /* float: left; */
+    /* bottom: 0; */
+  }
+  .ah-caption{
+    margin: 35px 0 0 0;
+  }
+
+  /* === body 영역 === */
+  .body-content{
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    top: 880px;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  dt{
+    font-size: 3.5rem;
+    float: none;
+    display: block;
+  }
+  dd{
+    margin-left: 0;
+  }
+  dd p{
+    font-size: 1.3rem;
+    line-height: 1.8;
+  }
+  dl img{
+    max-width: 100vw;
+    width: auto;
+    margin-left: calc(-50vw + 50%);
+  }
+
+  /* === footer 영역 === */
+  .footer-area{
+    width: 100%;
+    height: 460px;
+    position: relative;
+  }
+  .footer-area img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    vertical-align: top;
+  }
+  .footer-content{
+    max-width: 100%;
+    height: 100%;
+    position: absolute;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  .footer-content dl{
+    width: 100%;
+    color: #ffffff;
+    height: auto;
+    /* overflow: hidden; */
+    margin: 0;
+    padding-bottom: 20px;
+  }
+  /* .footer-content dl:first-child{
+    padding-bottom: 20px;
+  } */
+  .footer-content dt{
+    display: inline-block;
+    float: left;
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+    font-size: 1.125rem;
+    left: 0;
+  }
+  .footer-content dd{
+    margin-left: 160px;
+    font-weight: 300;
+    padding: 0;
+    margin: 0;
+    width: auto;
+    /* float: right; */
+    font-size: 1.125rem;
+    /* display: inline; */
+    margin-bottom: 6px;
+  }
+  .footer-link-box{
+    position: relative;
+    /* position: absolute; */
+    /* bottom: 0%; */
+    float: left;
+    left: 0;
+    height: 80px;
+    width: 100%;
+    /* float: right; */
+    /* font-size: 18px;
+    font-weight: 400;
+    color: #ffffff; */
+    /* vertical-align: middle; */
+    /* text-align: left; */
+    box-sizing: border-box;
+    padding: 20px;
+    /* display: flex; */
+    /* margin-bottom: 8px; */
+  }
+  .footer-link-box p{
+    /* font-size: 18px; */
+    font-size: 1.125rem;
+    font-weight: 400;
+    color: #ffffff;
+    /* vertical-align: middle; */
+    /* display: inline-block; */
+    /* height: auto; */
+    margin: 0;
+    /* margin-left: 20px; */
+    /* width: auto; */
+    float: left;
+    /* flex-basis: 120px; */
+    line-height: 2.8;
+    width: 40%;
+  }
+  .footer-link-box a{
+    /* flex-basis: 60px; */
+    /* cursor: pointer; */
+    display: inline-block;
+    margin: 0 10px;
+  }
+  .footer-link-box img{
+    padding-left: 12px;
+  }
 }

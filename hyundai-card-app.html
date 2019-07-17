@@ -11,6 +11,7 @@
       gtag('config', 'UA-143577324-1');
     </script>
     <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <title>Minsang Shin Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500&display=swap" rel="stylesheet">
@@ -40,24 +41,43 @@
     <!-- <div class="w-container"> -->
       <div class="hero-area">
         <div class="hero-content-container">
-          <span class="back">
-            <a href="index.html">
-              <img src="images/arrow_back.png" alt="move back">
-            </a>
-          </span>
+          <span class="back"><a href="index.html"><img src="images/arrow_back.png" alt="move back"></a></span>
+          <span class="project-icon"><img src="images/hyundai_card_app_icon.png" alt="hyundai_card_app_icon"></span >
           <p class="hero-text">세상에서 가장 간편한<br>Onboarding 프로세스 만들기.</p>
           <span class="project-name">Hyundai Card App</span>
-          <span class="project-icon">
-            <img src="images/hyundai_card_app_icon.png" alt="hyundai_card_app_icon">
-          </span>
+          <!-- <span class="project-icon"><img src="images/hyundai_card_app_icon.png" alt="hyundai_card_app_icon"></span> -->
         </div>
       </div>
       <div class="mezzanine-area">
         <div class="title_small">Achievement Highlights
-          <div class="tooltip">
+          <!-- <div class="tooltip">
             <img src="images/info_icon.png">
             <span class="tooltiptext">2018.5 자사 Data 분석</span>
-          </div>
+          </div> -->
+          <!-- <input type="button" class="tooltip" onclick="button_click();"> -->
+          <span class="tooltip">
+            <!-- <img src="images/info_icon.png"> -->
+            <span class="tooltiptext">2018.5 자사 Data 분석</span>
+          </span>
+          <script>
+          // pc, mobile 둘 다 클릭해서 팝업 띄우도록
+          $(".tooltip").click(function(){
+            $(".tooltiptext").toggle();
+          });
+
+          // 화면 크기에 따른 click 함수, hover 함수 적용 여부 정의
+          // $(window).resize(function() {
+          //   if($(window).width() <768) {
+          //     $(".tooltip").click(function(){
+          //       $(".tooltiptext").toggle();
+          //     })
+          //   } else {
+          //     $(".tooltip").hover(function(){
+          //       $(".tooltiptext").toggle();
+          //     });
+          //   };
+          // })
+          </script>
         </div>
         <div class="ah-container">
           <div class="ah-item">

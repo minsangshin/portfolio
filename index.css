@@ -244,7 +244,7 @@ img{
   .m-link{
     font-size: 20px;
     text-decoration: none;
-    text-decoration-color: #a0a0a0;
+    color: #a4a4a4;
     border: 2px solid #a0a0a0;
     border-radius: 100px;
     width: 120px;
@@ -255,9 +255,9 @@ img{
     box-sizing: border-box;
     /* background-color: rgba(0,0,0,0); */
   }
-  .m-link:hover{
-    background-color: rgba(0,0,0,0.05);
-    text-decoration-color: white;
+  .m-link:active{
+    background-color: rgba(0,0,0,0.2);
+    color: white;
   }
   .mezzanine{
     margin-bottom: 60px;
