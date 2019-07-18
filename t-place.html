@@ -11,6 +11,7 @@
       gtag('config', 'UA-143577324-1');
     </script>
     <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <title>Minsang Shin Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500&display=swap" rel="stylesheet">
@@ -37,40 +38,39 @@
       document.documentElement.scrollTop = 0;
     }
     </script>
-    <div class="w-container">
+    <!-- <div class="w-container"> -->
       <div class="hero-area" id="ha-tplace">
         <div class="hero-content-container">
-          <span class="back">
-            <a href="index.html">
-              <img src="images/arrow_back_bk.png" alt="move back">
-            </a>
-          </span>
-          <div class="hero-text">데이터 기반의<br>Retail 공간 경험 디자인.
-            <img src="images/tplace_logo.png" alt="icon" width="200px">
-          <!-- <span class="project-icon"> -->
-          <!-- </span> -->
-          </div>
+          <span class="back"><a href="index.html"><img src="images/arrow_back_bk.png" alt="move back"></a></span>
+          <span class="project-icon"><img src="images/tplace_logo.png" alt="tplace_logo" width="200px"></span>
+          <p class="hero-text">데이터 기반의<br>Retail 공간 경험 디자인.</p>
           <div class="project-name">T Place</div>
         </div>
       </div>
       <div class="mezzanine-area">
         <div class="title_small">Achievement Highlights
-          <div class="tooltip">
-            <img src="images/info_icon.png">
+          <span class="tooltip">
+            <!-- <img src="images/info_icon.png"> -->
             <span class="tooltiptext">2019.5 한국리서치 조사</span>
-          </div>
+          </span>
+          <script>
+          // pc, mobile 둘 다 클릭해서 팝업 띄우도록
+          $(".tooltip").click(function(){
+            $(".tooltiptext").toggle();
+          });
+          </script>
         </div>
         <div class="ah-container">
           <div class="ah-item">
-            <p class="ah-figure">90%</p>
+            <p class="ah-figure">90%&nbsp;</p>
             <p class="ah-caption">만족도</p>
           </div>
           <div class="ah-item">
-            <p class="ah-figure">90%</p>
+            <p class="ah-figure">90%&nbsp;</p>
             <p class="ah-caption">재방문 의향</p>
           </div>
           <div class="ah-item">
-            <p class="ah-figure">81%</p>
+            <p class="ah-figure">81%&nbsp;</p>
             <p class="ah-caption">브랜드 인식에 긍정적 영향</p>
           </div>
         </div>
@@ -220,6 +220,6 @@
           </span> -->
         </div>
       </div>
-    </div>
+    <!-- </div> -->
   </body>
 </html>
