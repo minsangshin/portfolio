@@ -347,7 +347,7 @@ dl img{
   word-break: keep-all;
   margin: 0 auto;
   width: auto;
-  line-height: 34px;
+  line-height: 36px;
   position: absolute;
   top: 18px;
   right: 40px;
@@ -409,7 +409,7 @@ dl img{
     position: relative;
     height: auto;
   }
-  #ha-tplace .project-icon{
+  #ha-tplace .project-icon, #ha-digitalhcc .project-icon, #ha-usedcar .project-icon{
     width: 150px;
   }
   .project-name{
