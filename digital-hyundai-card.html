@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-143577324-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-143577324-1');
+    </script>
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>Minsang Shin Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <!-- top button -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <script>
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+      } else {
+        document.getElementById("myBtn").style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
+    <!-- <div class="w-container"> -->
+      <div class="hero-area" id="ha-digitalhcc">
+        <div class="hero-content-container">
+          <span class="back"><a href="index.html"><img src="images/arrow_back_bk.png" alt="move back"></a></span>
+          <span class="project-icon"><img src="images/digital-hyundai-card_logo.png" alt="digital-hyundai-card_logo" width="200px"></span>
+          <p class="hero-text">세상에 없던 기능의<br>가장 직관적인 경험 설계</p>
+          <div class="project-name">Digital Hyundai Card</div>
+        </div>
+      </div>
+      <div class="mezzanine-area">
+        <div class="title_small">Achievement Highlights
+          <span class="tooltip">
+            <!-- <img src="images/info_icon.png"> -->
+            <span class="tooltiptext">자사 데이터</span>
+          </span>
+          <script>
+          // pc, mobile 둘 다 클릭해서 팝업 띄우도록
+          $(".tooltip").click(function(){
+            $(".tooltiptext").toggle();
+          });
+          </script>
+        </div>
+        <div class="ah-container">
+          <div class="ah-item">
+            <p class="ah-figure">1st&nbsp;</p>
+            <p class="ah-caption">디지털 현대카드 첫 프로젝트</p>
+          </div>
+          <div class="ah-item">
+            <p class="ah-figure">10K↑</p>
+            <p class="ah-caption">월간 고객경험 발생</p>
+          </div>
+          <!-- <div class="ah-item">
+            <p class="ah-figure">360K&nbsp;</p>
+            <p class="ah-caption">MAU</p>
+          </div> -->
+        </div>
+      </div>
+      <div class="body-content">
+        <dl>
+          <dt>
+            Digitizing the Credit Card.
+          </dt>
+          <dd>
+            <p>
+              2014년 이후, 카드업계에 Digitalizaion이 화두가 되면서 많은 카드사들이 '빅 데이터로 분석했다'는 마법의 주문과 함께 Segmentation을 통한 멤버십, 디지털 전용 상품, 맞춤 혜택 등을 골자로 한 신규 앱 서비스를 경쟁적으로 출시하게 되었습니다. 그러나 <span class="highlight">현대카드에서는 프로파간다에 집중하는 대신, 고객들이 실질적으로 혜택을 받을 수 있는 기능을 개발하기로 하였고 그 결과로서 'Lock & Limit'과 '가상카드번호'의 두 가지 서비스를 현대카드 앱에 탑재하여 출시</span>하게 되었습니다.<br>
+            </p>
+          </dd>
+         </dl>
+      </div>
+      <div class="body-content">
+        <dl>
+          <dt>
+            Lock & Limit.
+          </dt>
+          <dd>
+            <p>
+              <span class="highlight">Lock & Limit은 카드의 사용처, 사용한도를 자유롭게 조절할 수 있는 기능</span>입니다. 기존에는 사용자가 한도 조절을 하기 위해서는 고객센터에 전화하여 상담원과 통화해야만 했고, 한 번 줄인 한도를 다시 높이는 데에도 수많은 절차가 필요했습니다. 마찬가지로 사용처 조절도 해외 사용을 막는 수준으로만 가능했고, 이 역시 콜센터 상담원을 통해 처리해야 하는 일이었습니다. 이러한 일들을 현대카드 앱만 있다면 언제든지, 실시간으로 사용자가 직접 통제할 수 있도록 만든 것이 바로 Lock & Limit 서비스입니다.
+            </p>
+          </dd>
+          <div style="position:relative;padding-top:56.25%;">
+            <iframe src="https://www.youtube.com/embed/pO9HiG1jKLU" frameborder="0" allowfullscreen
+              style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
+          </div>
+        </dl>
+      </div>
+      <div class="body-content">
+        <dl>
+          <dt>
+            가상카드 번호.
+          </dt>
+          <dd>
+            <p>
+              <span class="highlight">가상카드번호는 가상의 카드번호를 발급하여, 이 카드번호로 결제할 수 있도록 하는 서비스</span>입니다. 해외 결제나 티켓 구매 등의 경우 여전히 카드번호를 입력하는 방식(Key-in)으로 신용카드 결제를 할 수 있는데, 이런 경우 카드번호와 유효기간, CVV번호를 모두 입력하게 되므로 사실상 도용 위험에 완전히 노출되어 있는 상태였습니다. 가상카드번호 서비스는 이러한 위험을 차단할 수 있도록 가상의 카드번호를 자유롭게 만들고 없앨 수 있는 서비스로서 탄생하였습니다.
+            </p>
+          </dd>
+          <div style="position:relative;padding-top:56.25%;">
+            <iframe src="https://www.youtube.com/embed/NHe7R7uhe7g" frameborder="0" allowfullscreen
+              style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
+          </div>
+        </dl>
+      </div>
+      <div class="body-content">
+        <dl>
+          <dt>
+            The Goal of UX.
+          </dt>
+          <dd>
+            <p>
+              이 편리하지만 생소한 기능을 어떻게 사용자들이 쉽게 사용할 수 있도록 디자인할까?에 대한 답을 찾는 것이 UX디자이너인 저의 숙제였습니다.<br>
+              가장 쉬운 방법은 기능에 대한 설명과 사용법을 보여주는 Walkthrough나 Coach Mark를 삽입하는 것이었습니다. 당시에는 이러한 방법이 유행이기도 했죠. 그러나 저는 이러한 장치들이 사용성을 해치는 요소라고 생각했습니다. 사용자에게 유용한 정보를 주기는커녕 귀찮은 허들로서 인지될 가능성이 있었고, 무엇보다도 <span class="highlight">구구절절한 설명 없이도 직관적으로 이해하고 사용할 수 있도록 인터랙션을 설계하는 것이 UX 디자인의 목표</span>가 되어야 한다고 생각했기 때문입니다.
+            </p>
+          </dd>
+        </dl>
+      </div>
+      <div class="body-content">
+        <dl>
+          <dt>
+            UX Concept.
+          </dt>
+          <dd>
+            <p>
+              일반적으로 핀테크 서비스는 금융상품·서비스 자체의 요건이 까다롭고 뒷단의 설계가 복잡한 만큼 사용 시나리오가 복잡해질 가능성이 매우 높습니다. 따라서 <span class="highlight">좋은 핀테크 서비스는 사용자와 서비스의 접점인 인터페이스가 직관적인 동시에 사용자에게 새로운 가치를 제공해야 한다</span>고 생각합니다. 이러한 철학을 바탕으로 사용설명 필요 없이 직관적으로 사용할 수 있는 플로우를 구현하기 위해 다음과 같은 세 가지 컨셉으로 서비스를 설계하였습니다.<br>
+              <span class="highlight">첫째, 사용자에게 익숙한 물리적 경험을 차용</span>하였습니다. ‘가상카드번호'의 사용자들은 실제로 자신이 보유한 카드와 동일한 UI의 카드 플레이트에서 가상의 카드번호와 유효기간을 확인하고, 실제 카드와 마찬가지로 이를 뒤집어 카드 뒷면의 CVC번호를 쉽게 확인할 수 있습니다.<br>
+              둘째, <span class="highlight">사용자가 취한 행동의 결과를 시각적으로 즉시 확인할 수 있는 UI</span>를 사용하였습니다. 이를 위해 'Lock & Limit’ 서비스에서 카드 사용처를 제한/해제하기 위한 버튼을 자물쇠가 열리고 닫히는 형태의 UI로 적용하였으며, 이는 ‘월간 웹이 추천하는 2016 웹 디자인 트렌드'라는 제목으로 월간 웹에 보도되기도 하였습니다.<br>
+              셋째로 정보 탐색의 비용을 최소화하기 위해 ‘Lock & Limit’, ‘가상카드번호’ 서비스 모두 카드의 설정 <span class="highlight">상태를 확인하기 위한 별도의 Depth로 진입할 필요 없이 동일한 화면에서 카드의 현 상태 조회와 설정 변경이 가능</span>하도록 설계하였습니다.
+            </p>
+          </dd>
+          <img src="images/digitalhcc_5a.png" alt="digital hyundai card ux concept">
+        </dl>
+      </div>
+      <div class="body-content">
+        <dl>
+          <dt>
+            From Plastic to Pixels.
+          </dt>
+          <dd>
+            <p>
+              서비스의 출시 후, 디지털에 최적화된 서비스를 만들어가는 전사적인 프로젝트인 ‘Digital 현대카드'의 대표 서비스로서 직관적인 사용경험을 주제로 1년이 넘는 기간 동안 ATL 마케팅의 소재가 되었으며, 매달 수십만 건의 사용 경험이 일어나고 있는 현대카드의 대표적인 핀테크 서비스로 자리잡게 되었습니다.
+            </p>
+          </dd>
+          <img src="images/digitalhcc_6a.jpeg" alt="digital hyundai card">
+        </dl>
+      </div>
+      <div class="footer-area">
+        <img src="images/digitalhcc_footer.jpg">
+        <div class="footer-content">
+          <dl>
+            <dt>Product</dt><dd>Hyundai Card App</dd>
+            <dt>Type</dt><dd>Mobile App</dd>
+            <dt>Company</dt><dd>Hyundai Card</dd>
+          </dl>
+          <dl>
+            <dt>Project</dt><dd>Digital Hyundai Card</dd>
+            <dt>Role</dt><dd>UX Design</dd>
+            <dt>Contribution</dt><dd>100%</dd>
+            <dt>Duration</dt><dd>2015.05 - 2015.12</dd>
+          </dl>
+          <span class="footer-link-box">
+            <p>Download</p>
+            <a href="https://apps.apple.com/kr/app/현대카드/id702653088" target="_blank">
+              <img src="images/appstore_icon.png" style="width:42px;height:42px">
+            </a>
+            <a href="https://play.google.com/store/apps/details?id=com.hyundaicard.appcard&hl=ko" target="_blank">
+              <img src="images/playstore_icon.png" style="width:42px;height:42px">
+            </a>
+          </span>
+        </div>
+      </div>
+    <!-- </div> -->
+  </body>
+</html>

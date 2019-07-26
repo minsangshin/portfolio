@@ -149,7 +149,7 @@ h3{
   background-color: rgba(1, 1, 1, 0.5);
 }
 .overlay:hover {
-  opacity: 1;
+    opacity: 1;
 }
 .text{
   color: white;
@@ -231,7 +231,7 @@ img{
   }
   .overlay{
     position: absolute;
-    opacity: 0.8;
+    opacity: 0.6;
   }
   h1{
     font-size: 28px;
@@ -240,13 +240,14 @@ img{
     font-size: 32px;
   }
   .m-link{
-    font-size: 20px;
+    font-size: 16px;
+    font-weight: 400;
     text-decoration: none;
     color: #a4a4a4;
-    border: 2px solid #a0a0a0;
-    border-radius: 100px;
-    width: 120px;
-    height: 48px;
+    border: 1px solid #a0a0a0;
+    /* border-radius: 100px; */
+    width: 110px;
+    height: 44px;
     display: inline-block;
     text-align: center;
     line-height: 44px;
@@ -259,5 +260,8 @@ img{
   }
   .mezzanine{
     margin-bottom: 60px;
+  }
+  .text{
+    font-size: 18px;
   }
 }

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-143577324-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-143577324-1');
+    </script>
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>Minsang Shin Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <!-- top button -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <script>
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+      } else {
+        document.getElementById("myBtn").style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
+    <!-- <div class="w-container"> -->
+      <div class="hero-area" id="ha-usedcar">
+        <div class="hero-content-container">
+          <span class="back"><a href="index.html"><img src="images/arrow_back.png" alt="move back"></a></span>
+          <span class="project-icon"><img src="images/hcs_logo.png" alt="hcs_logo" width="200px"></span>
+          <p class="hero-text">온라인으로 차량을 구매하는 시대의<br>사용자 경험 디자인.</p>
+          <div class="project-name">현대캐피탈 인증중고차</div>
+        </div>
+      </div>
+      <div class="mezzanine-area">
+        <div class="title_small">Achievement Highlights
+          <span class="tooltip">
+            <!-- <img src="images/info_icon.png"> -->
+            <span class="tooltiptext">자사 데이터</span>
+          </span>
+          <script>
+          // pc, mobile 둘 다 클릭해서 팝업 띄우도록
+          $(".tooltip").click(function(){
+            $(".tooltiptext").toggle();
+          });
+          </script>
+        </div>
+        <div class="ah-container">
+          <div class="ah-item">
+            <p class="ah-figure">1st&nbsp;</p>
+            <p class="ah-caption">국내 최초 중고차 온라인몰</p>
+          </div>
+          <div class="ah-item">
+            <p class="ah-figure">97%&nbsp;</p>
+            <p class="ah-caption">구매 만족도</p>
+          </div>
+          <div class="ah-item">
+            <p class="ah-figure">360K&nbsp;</p>
+            <p class="ah-caption">MAU</p>
+          </div>
+        </div>
+      </div>
+      <div class="body-content">
+        <dl>
+          <dt>
+            A Wave of Digital Disruption.
+          </dt>
+          <dd>
+            <p>
+              현대차의 자회사이자 자동차금융 전문 회사로서 현대캐피탈은 자사의 리스/렌트 상품의 만기가 도래하여 반납된 차량을 다시 판매하여 유동화할 필요가 있었고, 이를 위해서 2000년대 초반부터 중고차 매매 사업을 전개하고 있었습니다.<br>
+              그러나 영원히 변하지 않을 것 같은 중고차 시장에도 디지털 혁명의 물결이 들이닥치게 되었고, 전사적인 Digitalization 이니셔티브 하에서, 현대캐피탈은 온라인으로 직접 중고차를 판매하기로 하였습니다.
+            </p>
+          </dd>
+          <img src="images/usedcar_1a.jpg" alt="used car parking">
+        </dl>
+      </div>
+      <div class="body-content">
+        <dl>
+          <dt>
+            서비스 디자인에서 출발하다.
+          </dt>
+          <dd>
+            <p>
+              자동차라는 재화는 고관여의 제품입니다. 가격이 높을뿐만 아니라 한 번 구매하면 수 년은 이용해야 하고, 생명과 안전에도 직접적인 연관이 있기 때문이죠. 특히 중고차의 경우, 중고차 시장이 흔히 '레몬마켓'이라고 불리는 것 처럼 판매자와 구매자간의 정보 불균형이 존재하기 때문에 사람들은 두 눈으로 직접 확인한 물건도 신뢰하지 못할 정도로 거래가 쉽지 않은 상품입니다.<br>
+              <span class="highlight">이러한 특성을 가진 중고차를 온라인으로 판매하기 위해서는 사용자 경험이 매우 정교하게 설계되어야만 했습니다.</span> 프로젝트의 UX를 리딩하는 역할을 맡았던 저는 담당자의 직관에 따른 기획과 Top-down의 의사결정에 의존한 방식 대신, 정공법을 선택했습니다. 서비스디자인 프로세스에 기반하여 차근차근 컨셉을 구축하고, 이에 맞는 정보구조와 화면을 발전시키기로 한 것입니다.
+            </p>
+          </dd>
+        </dl>
+      </div>
+      <div class="body-content">
+        <dl>
+          <dt>
+            Building the Concept.
+          </dt>
+          <dd>
+            <p>
+              이에 서비스디자인 방법론 중 하나인 <span class="highlight">"Double Diamond"를 적용하여 "Discover - Define - Develop - Deliver"의 네 단계를 진행시키면서 컨셉을 도출</span>하였습니다. Discover 단계에서는 중고차 시장의 Stakeholder들과 이들의 행동을 파악하기 위해 중고차 매매단지를 돌아다니며 Shadowing을 진행하고, 중고차 판매 직원들과 구매자를 만나 인터뷰를 진행하였습니다. 이렇게 수집한 정보를 바탕으로 중고차 구매 과정의 사용자 Task 및 Action을 도식화하여 정리하였습니다.<br>
+              Define 단계에서는 사용자 유형을 분류하여 우리 서비스의 타겟이 되는 Persona를 도출하였으며 유사한 국내외 사례조사와 무드보드 작업을 통해 시각적인 컨셉을 도출하였습니다.<br>
+              Develop 단계에서는 사업부서와의 Workshop을 통해 서비스 컨셉에 대한 공감대를 형성하는 자리를 마련하였고, Service Blueprint를 작성함으로써 서비스 구축을 위한 로드맵을 시각화하였습니다.<br>
+              Deliver 단계에서는 와이어프레임과 디자인 시안, 그리고 프로토타입을 통해 컨셉을 실제 프로덕트로 구현해보고 검증하는 작업을 진행하였습니다.
+            </p>
+          </dd>
+          <img src="images/usedcar_3a.png" alt="double diamond">
+        </dl>
+      </div>
+      <div class="body-content">
+        <dl>
+          <dt>
+            UX Concept.
+          </dt>
+          <dd>
+            <p>
+              이러한 과정을 통해 도출한 UX 컨셉은 바로 세 가지였습니다. 'Trustworthy', 'Savvy', 'Touching'. 먼저 <span class="highlight">'Trustworthy'는 최대한의 정보 제공을 통한 신뢰 형성</span>을 의미합니다. 리서치를 통해 파악한 중고차 시장에서의 구매를 망설이게 하는 가장 큰 이유는 바로 정보의 불균형이라는 사실이었고 이를 해소하기 위해서 우리의 서비스는 사용자와의 신뢰 구축에 우선순위를 두었습니다. 360도로 상태가 가능한 360 View, 해당 차량을 정비한 정비사의 실명을 드러내고 전문가로서의 Comment를 첨부하였으며, 상품화가 어떻게 진행되는지를 영상 컨텐츠를 통해 공개하고, 온라인의 익명성을 보완하기 위해 오프라인에서의 구매 경험과 같이 해당 차량의 전담 매니저를 두고, 전문성 있는 상담이 가능하도록 하였습니다.<br>
+              <span class="highlight">'Savvy'는 딜러의 도움이 없어도 매물의 탐색과 계약/결제가 가능한 Seamless한 UX를 구축하는 것</span>입니다. 현대캐피탈의 User Data를 기반으로 사용자에게 어울리는 차량을 추천해주고, 끊임없이 매물을 탐색할 수 있도록 현재 화면에 보고 있는 차량과 유사한 차량을 보여주고, 해상도에 따라서는 화면을 분할하여, 리스트-상세화면 간 화면 이동 없어도 계속 리스트를 탐색할 수 있도록 제공합니다.<br>
+              <span class="highlight">'Touching'은 구매 후에도 지속적인 관계가 유지될 수 있도록 하는 위트와 배려를 표현하는 것</span>입니다. 여기에는 결제 프로세스와 차량 인도 과정에서의 고객 접점을 세심하게 설계하는 것, 그리고 구매한 차량의 이력을 조회하고 소모품 교체 시기를 알려주는 것 등이 포함됩니다.<br>
+              이와 같은 컨셉으로 설계한 대표 화면 몇 가지를 다음 단락에서 소개합니다.
+            </p>
+          </dd>
+          <img src="images/usedcar_4a.png" alt="ux concept">
+        </dl>
+      </div>
+      <div class="body-content">
+        <dl>
+          <dt>
+            정보확인과 탐색 화면.
+          </dt>
+          <dd>
+            <p>
+              오프라인의 경우 매장에 진입하면 여러 감각적 요소로부터 신뢰감을 느끼게 되고 이로 인해 매장을 지속적으로 탐색할 수 있게 됩니다. <span class="highlight">온라인에서도 이와 마찬가지로 정보 확인과 탐색 과정에서 긍정적인 자극을 줄 수 있도록</span> 구성하였습니다. 사용자들이 현대캐피탈 인증중고차를 처음 접하는 메인 화면에서는 우리의 상품에 대한 긍정적인 라포르를 형성할 수 있도록 상품화 과정, 구매 고객의 후기, 매니저 소개 등의 컨텐츠를 구성하였습니다.<br>
+              또한 검색 단계에서는 첫 차를 구매하는 초보자의 컨텍스트에 맞게 추천하는 기능을 탑재하였는데, 이는 딜러가 나이, 차량 이용 목적, 운전 경력 등을 토대로 그에 걸맞는 매물을 추천해주는 오프라인에서의 프로세스를 차용한 것입니다.
+            </p>
+          </dd>
+          <img src="images/usedcar_5a.png" alt="used car searching">
+        </dl>
+      </div>
+      <div class="body-content">
+        <dl>
+          <dt>
+            비교/선택 화면.
+          </dt>
+          <dd>
+            <p>
+              원하는 차량을 '탐색'하고, 마음에 드는 차량의 상세 정보를 '확인'하는 탐색-확인의 단계를 <span class="highlight">Seamless한 경험으로 만들기 위해서 페이지 간의 끊김없는 탐색이 이뤄지도록 레이아웃을 구성</span>하였습니다. 리스트 뷰에서 차량별 상세 페이지로 진입한 후에도, 화면의 일부를 활용해 리스트를 제공하며 화면의 이동 없이도 추가적인 탐색이 가능하도록 한 것입니다.<br>
+              차량 상세 페이지에서는 기존의 중고차 매물에 대한 불신 대신, 현대캐피탈 인증중고차만의 신뢰감을 전달할 수 있도록 360도 상태확인, 정비사 Comment, 전문가 리뷰 등의 컨텐츠를 한 화면에서 모두 확인할 수 있도록 제공하였습니다.
+            </p>
+          </dd>
+          <img src="images/usedcar_6a.png" alt="used car comparison">
+        </dl>
+      </div>
+      <div class="body-content">
+        <dl>
+          <dt>
+            Used Cars, New Platform.
+          </dt>
+          <dd>
+            <p>
+              오프라인 터치포인트 없이도 매물의 탐색부터 결제까지 모두 이뤄지는 중고차 유통 방식은 국내에서 처음 시도하는 방식이었기 때문에 내심 실제로 판매가 이뤄질까?에 대한 걱정이 있었습니다. 그러나 그러한 걱정은 기우에 불과했고, 현재는 월 xx 대의 차량이 오프라인 방문 없이 100% 온라인 프로세스를 통해 출고되고 있습니다. 이후 '엔카 홈서비스' 등, 유사한 형태의 중고차 유통 시도가 이뤄졌고, 디지털 시대의 새로운 중고차 유통 방식의 기준을 제시한 것 같아 개인적으로 기억에 남는 프로젝트입니다.
+            </p>
+          </dd>
+          <img src="images/usedcar_7a.png" alt="hyundai capital certified cars online store">
+        </dl>
+      </div>
+      <div class="footer-area">
+        <img src="images/usedcar_footer.jpg">
+        <div class="footer-content">
+          <dl>
+            <dt>Product</dt><dd>현대캐피탈 인증중고차</dd>
+            <dt>Type</dt><dd>Web</dd>
+            <dt>Company</dt><dd>Hyundai Capital</dd>
+          </dl>
+          <dl>
+            <dt>Project</dt><dd>인증중고차 온라인 스토어 구축</dd>
+            <dt>Role</dt><dd>UX Design</dd>
+            <dt>Contribution</dt><dd>80%</dd>
+            <dt>Duration</dt><dd>2017.01 - 2017.06</dd>
+          </dl>
+          <span class="footer-link-box">
+            <p>Website</p>
+            <a href="https://certifiedcar.hyundaicapital.com" target="_blank" id="weblink">
+              ↗︎&nbsp;바로가기
+            </a>
+          </span>
+        </div>
+      </div>
+    <!-- </div> -->
+  </body>
+</html>
