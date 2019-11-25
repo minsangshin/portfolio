@@ -1,18 +1,34 @@
+/* ===== if user brawses in dark mode, then apply dark mode ===== */
+/* @media (prefers-color-scheme: dark) {
+  body {
+    background-color: black;
+    color: white;
+  }
+}
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: white;
+    color: black;
+  }
+} */
+
 /* =====폰트===== */
 body{
  margin: 0;
- padding: 50px;
+ padding: 0,50px,50px,50px;
  font-family: 'Rubik', 'Assistant', sans-serif;
  color: #2e2e2e;
+ background-color: #fff;
 }
-/* a {
-  font-size: 24px;
-  color:black;
-  text-decoration: underline;
-  padding: 10px;
-} */
+body.dark{
+  background-color: #464647;
+}
+
 a{
   color: #2e2e2e;
+}
+a.dark{
+  color: #a0a0a0;
 }
 
 .project-name{
@@ -34,6 +50,9 @@ h1{
   font-weight: 500;
   letter-spacing: -0.5px;
   color: #a0a0a0;
+}
+h2.dark{
+  color: #35ff26;
 }
 h2{
   /* font-family: 'Assistant', sans-serif; */
@@ -57,6 +76,104 @@ h3{
 }
 
 /* ========레이아웃 잡기======= */
+
+/* dark mode toggle button */
+  /* https://www.w3schools.com/howto/howto_css_switch.asp */
+#header{
+  max-width: 940px;
+  height: 48px;
+  background-color: #d8d8d8;
+  margin: auto;
+}
+#header.dark{
+  background-color: #393939;
+}
+
+#switch-name{
+  font-size: 18px;
+  top: 13px;
+  left: 16px;
+  position: relative;
+  color: #575a61;
+  letter-spacing: -0.2px;
+}
+#switch-name.dark{
+  color: #a0a0a0;
+}
+/* 버튼의 배경을 둘러싸고 있는 컨테이너이자 실질적으로 버튼 역할(label)- label 눌러도 스위치를 동작시킬 수 있기 때문*/
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 48px;
+  height: 24px;
+  /* vertical-align: middle; */
+  /* top: 50%; */
+  left: 20px;
+  top: 10px;
+  /* transform: translate(0, -50%); */
+}
+/* <input> 스위치 (실제로는 안보임) */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+/* 버튼 배경(타원) - 여기 적용된 transition은 버튼 배경색의 애니메이션임 */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ffffff;
+  -webkit-transition: .1s;
+  transition: .1s;
+}
+/* 버튼(원) - unchecked 상태(darkmode OFF)일떄 slider(동그라미)의 default 상태 */
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 22px;
+  width: 22px;
+  left: 1px;
+  bottom: 1px;
+  background-color: #d8d8d8;
+  -webkit-transition: .1s;
+  transition: .1s;
+}
+/* 버튼 배경(타원) - checked(darkmode ON)일 때 변화하는 버튼 배경의 색상 */
+input:checked + .slider {
+  background-color: #01F801;
+}
+/* 이건 왜 있는지 모르겠음 */
+input:focus + .slider {
+  box-shadow: 0 0 1px #01F801;
+}
+/* 버튼(원) - checked 상태(darkmode ON)일떄 slider(동그라미)의 default 상태 */
+input:checked + .slider:before {
+  -webkit-transform: translateX(24px);
+  -ms-transform: translateX(24px);
+  transform: translateX(24px);
+  background-color: #ffffff;
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+.slider.round:before {
+  border-radius: 50%;
+}
+/* remove transition */
+.notransition {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -o-transition: none !important;
+  transition: none !important;
+}
+
+
 /* whole container */
 .w-container{
   padding-top: 80px;
@@ -83,7 +200,6 @@ h3{
   }
 .item:nth-child(2){
   /* flex-shrink: 1; */
-  padding-top: 80px;
   /* flex-basis: 400px; */
   width: 240px;
   /* float: right; */
@@ -200,6 +316,14 @@ img{
 
 /* ========== 반응형 ========== */
 @media(max-width:767px){ /* width 767px이하일 떄 */
+  /* Darkmode */
+  #header{
+    margin: 0 -20px;
+  }
+  #header label{
+    position: relative;
+  }
+
   .container{
     flex-direction: column-reverse;
     }
@@ -207,11 +331,13 @@ img{
     flex-basis: auto;
     }
   .item:nth-child(2){
-    padding-top: 40px;
+    /* padding-top: 80px; */
+    padding-top: 0px;
+    /* top: 0; */
+    top: 80px;
     margin-bottom: 100px;
     position: absolute;
     margin-left: 0;
-    top: 0;
     display: block;
     width: 160px;
   }
