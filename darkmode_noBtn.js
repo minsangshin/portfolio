@@ -1,4 +1,4 @@
-var darkmodeObjects = ['body', 'a', '#header', '#switch-name', 'h2'];
+var darkmodeObjects = ['p', 'body', 'a', '#header', '#switch-name', 'h2'];
 
 document.addEventListener('DOMContentLoaded', (event) => {
   var x = window.matchMedia("(prefers-color-scheme: dark)");

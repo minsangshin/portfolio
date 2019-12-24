@@ -11,7 +11,7 @@
 // var transition = window.getComputedStyle(document.getElementsByClassName('slider'), ':before').getPropertyValue('transition');
 // console.log(transition)
 
-var darkmodeObjects = ['body', 'a', '#header', '#switch-name', 'h2'];
+var darkmodeObjects = ['body', 'a', '#header', '#switch-name', 'h2', 'p'];
 
 // // apply darkmode by default if user's system is in darkmode
 // function defaultMode(x) {
