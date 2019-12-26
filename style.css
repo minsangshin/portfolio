@@ -57,6 +57,9 @@ img{
 #ha-digitalhcc{
   background-color: #E0E0E0;
 }
+#ha-thesis{
+  background-color: #862633;
+}
 .hero-content-container{
   position: relative;
   margin: auto;
@@ -372,6 +375,46 @@ dl img{
 .column:nth-child(3){
   /* flex: clac(6350/4720); */
   flex: 1.345;
+}
+
+#thesis_5 .column:nth-child(1){
+  flex: 1.338;
+}
+#thesis_5 .column:nth-child(2){
+  flex: 0.928;
+}
+#thesis_5 .column:nth-child(3){
+  flex: 0.961;
+}
+
+#thesis_7 .column:nth-child(1){
+  flex: 1.35;
+}
+#thesis_7 .column:nth-child(2){
+  flex: 0.91;
+}
+#thesis_7 .column:nth-child(3){
+  flex: 1.037;
+}
+
+#thesis_8 .column:nth-child(1){
+  flex: 1;
+}
+#thesis_8 .column:nth-child(2){
+  flex: 1;
+}
+#thesis_8 .column:nth-child(3){
+  flex: 1;
+}
+
+#thesis_9 .column:nth-child(1){
+  flex: 2.041;
+}
+#thesis_9 .column:nth-child(2){
+  flex: 2.659;
+}
+#thesis_9 .column:nth-child(3){
+  flex: 0.744;
 }
 
 /* ========== 반응형 ========== */

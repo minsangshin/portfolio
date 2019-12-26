@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="shortcut icon" href="images/bulb.png" />
+    <link rel="apple-touch-icon" href="images/bulb.png" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-143577324-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-143577324-1');
+    </script>
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>Minsang Shin Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <!-- top button -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <script>
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+      } else {
+        document.getElementById("myBtn").style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
+    <!-- <div class="w-container"> -->
+      <div class="hero-area" id="ha-thesis">
+        <div class="hero-content-container">
+          <span class="back"><a href="index.html"><img src="images/arrow_back.png" alt="move back"></a></span>
+          <!-- <span class="project-icon"><img src="images/tplace_logo.png" alt="koreaUniversity_logo" width="200px"></span> -->
+          <p class="hero-text">자율주행 환경의 모빌리티 서비스를 위한<br>맥락 중심 경험 디자인.</p>
+          <div class="project-name">석사학위논문</div>
+        </div>
+      </div>
+
+      <!-- <div class="mezzanine-area">
+        <div class="title_small">Achievement Highlights
+          <span class="tooltip">
+            <span class="tooltiptext">2019.5 한국리서치 조사</span>
+          </span>
+          <script>
+          // pc, mobile 둘 다 클릭해서 팝업 띄우도록
+          $(".tooltip").click(function(){
+            $(".tooltiptext").toggle();
+          });
+          </script>
+        </div>
+        <div class="ah-container">
+          <div class="ah-item">
+            <p class="ah-figure">90%&nbsp;</p>
+            <p class="ah-caption">만족도</p>
+          </div>
+          <div class="ah-item">
+            <p class="ah-figure">90%&nbsp;</p>
+            <p class="ah-caption">재방문 의향</p>
+          </div>
+          <div class="ah-item">
+            <p class="ah-figure">81%&nbsp;</p>
+            <p class="ah-caption">브랜드 인식에 긍정적 영향</p>
+          </div>
+        </div>
+      </div> -->
+
+      <div class="body-content">
+        <dl>
+          <dt>
+            The Future of Mobility.
+          </dt>
+          <dd>
+            <p>
+              쏘카, 그린카와 같은 카셰어링 서비스부터, 우버, 그랩과 같은 라이딩헤일링 서비스, 그리고 타다와 같은 새로운 택시 서비스까지... 우리는 기존의 차량 이용 방식을 획기적으로 변화시키는 다양한 변화에 직면하고 있습니다. 단순히 서비스적인 변화 뿐인가요, 자율주행차라는 기술혁신 또한 우리의 모빌리티 생활을 완전히 새로운 형태로 변화시킬 것이 분명해 보입니다. <br>
+              이러한 배경에서 새롭게 변화될 모빌리티 서비스를 사용자 경험 측면에서 분석하고, 머지않아 대중화될 자율주행 환경에서 탑승자들에게 어떤 서비스를 제공해야 하는지에 대해서 연구하였으며, 본 글은 이러한 연구를 요약한 내용입니다.
+            </p>
+          </dd>
+        </dl>
+      </div>
+      <div class="body-content">
+        <dl>
+          <dt>
+            Forces of Change.
+          </dt>
+          <dd>
+            <p>
+            2010년대 들어 공유경제 트렌드가 폭발적으로 확산되었으며, 이러한 추세에 따라 차량의 이용이 소유에서 이용으로 변화하고 있습니다. 차량 소유의 비효율성에 눈을 뜬 소비자들은 스마트폰 등의 통신 기술 성숙에 따라 등장한 '차량 공유 서비스'를 이용해 필요할 때마다 차량을 빌려 쓰기도 하고, '우버'와 같은 '라이딩헤일링 서비스'를 이용해 손쉽게 차량을 호출하고, 내 위치까지 정확하게 마중나온 차량에 몸을 싣기도 합니다. <br>
+            이러한 대안적인 모빌리티 서비스의 성장과 동시에, 차량 이용의 트렌드에 중대한 변화를 끼칠만한 기술적 발전이 이루어지고 있습니다. 바로 운전자 없이 스스로 운전하는 자율주행차입니다. 우리에게는 구글의 자율주행차 프로젝트로 유명한데요, 이 기술은 2020-30년경에는 사용화되고, 2040~50년에는 대중화될 것으로 전망되고 있습니다. <span class="highlight">현재는 운전자 없는 차량에 내 생명을 맡긴다는 것이 상상이 되지 않지만, 이 기술의 안전성, 편의성이 담보되게 된다면 사람들이 이동수단을 이용하는 방식에는 혁명적인 변화가 일어날 것으로 기대됩니다.</span> 이에 따라 현재 범람하는 모빌리티 서비스의 이용 방식도 변화될 것으로 예상되고 있습니다.
+            </p>
+          </dd>
+          <img src="images/thesis_2a.jpg" alt="google waymo">
+        </dl>
+      </div>
+      <div class="body-content">
+        <dl>
+          <dt>
+            Research Approach.
+          </dt>
+          <dd>
+            <p>
+            비록 아직까지는 자율주행 차량의 기술적인 완성도를 높이기 위한 과제에 연구 역량이 집중되어 있지만, 이를 이용하여 사용자에게 새로운 가치를 제공하는 서비스 모델에 대해서는 아직 국/내외에 많은 연구가 진전되어 있지 않은 것이 현실입니다. 이에 <span class="highlight">자율주행차의 서비스 측면에 초점을 맞추어, 자율주행 환경에 맞는 서비스 시나리오를 개발하고 검증하는 것을 목표로 연구를 진행</span>하였습니다. <br>
+            자율주행 환경에서의 서비스 이용 경험을 디자인하기 위해 먼저 현재의 모빌리티 서비스를 분석하였으며, 자율주행차가 제공해야 할 사용자 가치를 도출하였습니다. 이 두 분석을 기반으로 자율주행 환경의 모빌리티 서비스 사용 경험을 모델링하였고, 경험 시뮬레이션을 통해 그 효용성을 분석하였습니다.
+            </p>
+          </dd>
+          <img src="images/thesis_3a.jpg" alt="research approach">
+        </dl>
+      </div>
+      <div class="body-content">
+        <dl>
+          <dt>
+            모빌리티 서비스 현황.
+          </dt>
+          <dd>
+            <p>
+              모빌리티는 이용자에게 이동성을 제공하는 수단 및 서비스를 통칭합니다. 특히 대표적인 이동수단인 자동차의 물질적 속성뿐만 아니라 사용자가 대가를 지불하고 이동성이라는 가치를 제공받는 서비스적인 측면을 강조하는 의미에서 '모빌리티 서비스'라는 용어가 사용되고 있습니다. 조금 더 개념을 확장해보면, 모빌리티 서비스는 전통적인 자동차 이용방식인 자동차의 소유(Car Ownership)를 대체하는 새로운 방식의 자동차 이용 방식의 총합이라고 볼 수 있습니다. <br>
+              모빌리티 서비스는 성격에 따라 카셰어링(Car-sharing), 라이드헤일링(Ride-hailing), 카풀링(Carpooling) 서비스로 구분할 수 있습니다. 먼저 카셰어링 서비스는 우리에게는 쏘카, 그린카로 익숙한 서비스로, 초단기 차량 대여 서비스입니다. <br>
+              라이드헤일링 서비스는 이용자가 차량을 호출하여 탈 수 있는 서비스로, 미국의 우버(Uber), 인도네시아의 그랩(Grab), 중국의 디디추싱(滴滴出行)이 대표적인 글로벌 서비스입니다. <br>
+              카풀링 서비스는 대부분 전업 드라이버에 의한 서비스가 제공되는 라이드헤일링과 달리, 차량 소유자가 자신이 이동하는 경로에 함께 탑승하기 원하는 서비스 수요자를 탑승시켜 비용을 절감하는 것을 목표로 제공되는 서비스입니다. 대표적으로 영국의 리프트쉐어(Liftshare)가 있으며, 한국에도 카풀링을 표방한 '풀러스' 서비스가 있습니다.
+            </p>
+          </dd>
+          <img src="images/thesis_4a.png" alt="types of mobility services">
+        </dl>
+      </div>
+      <div class="body-content">
+        <dl>
+          <dt>
+            모빌리티 서비스 이용경험 조사.
+          </dt>
+          <dd>
+            <p>
+              모빌리티 서비스의 이용경험을 조사하기 위해 심층 인터뷰(In-depth Interview)와 쉐도잉(Shadowing)을 수행하였습니다.<br>
+              심층 인터뷰는 카셰어링 서비스 이용 경험이 있는 20~30대 남, 녀 13명을 모집하여 수행하였으며 이를 통해 이용 경험에 대한 구체적이고 정성적인 데이터를 수집할 수 있었습니다. <br>
+              쉐도잉은 카셰어링 이용 경험에서의 의식하지 않았던 패인 포인트(Pain Point)와 기회요소를 도출하기 위해 수행되었습니다. 관찰 대상 서비스는 국내 카셰어링 서비스 중 가장 이용자가 많은 쏘카 서비스를 선정하였으며, 여가/여행, 쇼핑, 업무, 출퇴근, 심야 귀가의 5가지 시나리오에 따라 총 5명의 피험자를 대상으로 실험을 실시하였습니다. 쉐도잉 과정에서 피험자는 Think Aloud 기법으로 자신의 행동과 생각을 드러나도록 하였으며, 모든 과정은 피험자의 하에 액션캠으로 녹화되었습니다.<br>
+              실험을 통해 얻어진 결과를 바탕으로, 모빌리티 서비스의 고객 프로필을 도출하였습니다. 고객 프로필은 디자인 툴킷으로서, 비즈니스 모델 캔버스(Business Model Canvas) 중 고객 세그먼트(Customer Segment) 부분을 상세하기 분석하기 위해 특정 고객층을 활동(Jobs), 불만(Pains), 혜택(Gains)으로 구분하여 설명하는 방법론입니다. <br>
+              도출된 고객 프로필을 요약해보면, 먼저 '활동' 측면에서 카셰어링의 이용자들은 이성친구와의 데이트, 친구와의 여행 등 다른 사람과의 사회적인 활동을 목적으로 카셰어링 서비스를 이용하는 경우가 많았으며, 핑하기·장보기, 무거운 짐을 옮기기 등 차량의 이동성으로부터 가치를 얻기 위한 이용 목적을 보이기도 하였습니다. 이용경험 조사 중 '불만' 프로필에 영향을 준 페인포인트들은 편도 이용이 제한적인 현재의 서비스 정책, 무인 관리에서 오는 실내 청소 상태와 차량 성능에 대한 관리 상태에 대한 불만, 직접 차고지 에 찾아가서 차를 찾아야 하는 경험에서 오는 불만, 그리고 익숙하지 않은 차 량을 직접 운전해야한다는 점에서 발생하는 불만들이 대부분으로 나타났습니다. '혜택' 측면에서는 대중교통 대비 시간을 절약할 수 있다는 비교우위와 짐을 실을 수 있다는 점, 다양한 차량을 골라서 이용할 수 있다는 점, 간편하게 예약할 수 있다는 점 등이 도출되었습니다.
+            </p>
+          </dd>
+          <div class="row" id="thesis_5">
+            <div class="column">
+              <a target="_blank" href="images/thesis_5a.png">
+                <img src="images/thesis_5a.png" alt="shadowing of carsharing service">
+              </a>
+            </div>
+            <div class="column">
+              <a target="_blank" href="images/thesis_5b.png">
+                <img src="images/thesis_5b.png" alt="making customer profile">
+              </a>
+            </div>
+            <div class="column">
+              <a target="_blank" href="images/thesis_5c.jpg">
+                <img src="images/thesis_5c.jpg" alt="customer profile of mobility services">
+              </a>
+            </div>
+          </div>
+        </dl>
+      </div>
+      <div class="body-content">
+        <dl>
+          <dt>
+            자율주행차의 발전과 모빌리티 서비스의 변화.
+          </dt>
+          <dd>
+            <p>
+              자율주행 기술 발달 수준에 따른 모빌리티 이용 경험 변화를 구체적으로 분석하기 위해서 자율주행 단계별 경험 요소와 사례를 포함한 자율주행 환경의 모빌리티 경험 캔버스를 도식화하였습니다. 세로축에는 미국 자동차공학회의 자율주행 기술 단계(Level of Automation) 구분을 낮은 단계부터 높은 단계의 순으로 나열하였으며, 가로축에는 자율주행 기술 발전에 따른 연결성의 정도(Level of Connectivity)를 나열하였습니다. 이는 자율주행의 정도가 심화될수록 차량이 내포하는 연결성 또한 고도화되며 이로 인해 전체적인 경험의 커버리지는 증가하게 됨을 나타냅니다. 이러한 분석을 통해 <span class="highlight">자율주행의 완성 단계인 레벨 4~5 수준의 자율주행차량은 고도화된 연결성(V2X)을 바탕으로 단순히 이동성만을 제공하는 수단이 아닌, 차량을 매게로 이용자에게 전방위적인 경험을 제공하는 수단으로 발전하게 될 것임을 유추할 수 있습니다.</span> 이 단계에서는 이용자의 사용 맥락을 파악하고 다양한 서비스적 요소를 디자인하는 것이 차량의 경험을 결정하게 될 것입니다.
+            </p>
+          </dd>
+          <img src="images/thesis_6a.jpg" alt="level of automation and experience">
+        </dl>
+      </div>
+      <div class="body-content">
+        <dl>
+          <dt>
+            자율주행 환경의 모빌리티 서비스 컨셉 구현.
+          </dt>
+          <dd>
+            <p>
+              자율주행 환경에서 모빌리티 서비스 경험을 디자인하기 위해, 관련 문헌으로부터 사용자 요구사항 또는 경험요소와 관련된 부분을 수집하였고 키워드분석 및 유사성에 따른 분류를 통해 <span class="highlight">자율주행차의 사용자 가치를 편의성(Convenience), 접근용이성(Accessibility), 확장성(Expandability), 신뢰성(Reliability), 쾌적함(Comfortability), 상황 인지(Context Awareness)의 여섯 가지로 정의</span>하였습니다.<br>
+              도출한 사용자 가치를 바탕으로 자율주행 모빌리티 서비스의 가치 제안 맵(value proposition map)을 도출하였습니다. 가치 제안 맵은 제품과 서비스(Products and Services), 불만 해결 방안(Pain Relievers), 혜택 창출 방안(Gain Creators)으로 구성되어 있으며, 이를 통해 사용자가 원하는 제품과 서비스를 제안할 수 있는 방법입니다. <br>
+              도출한 고객 프로필과 가치 제안 맵을 바탕으로 비즈니스 모델 캔버스(Business Model Canvas)를 제시하였습니다. <br>
+              지금까지 도출된 사용자 가치, 고객 프로필, 가치 제안 맵, 비즈니스 모델 캔버스를 종합하여 <span class="highlight">'자율주행 환경의 모빌리티 서비스 컨셉 모델'</span>을 제안하였습니다. 이 모델을 통해 모빌리티 사용자의 경험은 자율주행 차량의 연결성을 바탕으로 확장되며, 이러한 환경에서 모빌리티 서비스 경험 디자인은 6개의 사용자 가치(연결성, 접근 용이성, 확장성, 신뢰성, 쾌적함, 상황 인지)에 기반하여 이루어져야 하고, 이를 통해 향상된 이동성과 맞춤형 서비스를 제공할 수 있게 됨을 나타냈습니다. <span class="highlight">즉, 자율주행 환경의 모빌리티 서비스는 사용자가 원하는 곳에서 스스로 모든 운행과 관리를 수행하는 무인 차량을 이용할 수 있도록하여 향상된 이동성을 충족함과 동시에, 차량의 안팎에서 다양한 맞춤형 서비스를 제공받을 수 있도록 하는 서비스가 되어야 할 것입니다.</span>
+            </p>
+          </dd>
+          <div class="row" id="thesis_7">
+            <div class="column">
+              <a target="_blank" href="images/thesis_7a.png">
+              <img src="images/thesis_7a.png">
+              </a>
+            </div>
+            <div class="column">
+              <a target="_blank" href="images/thesis_7b.png">
+              <img src="images/thesis_7b.png">
+              </a>
+            </div>
+            <div class="column">
+              <a target="_blank" href="images/thesis_7c.png">
+              <img src="images/thesis_7c.png">
+              </a>
+            </div>
+          </div>
+        </dl>
+      </div>
+      <div class="body-content">
+        <dl>
+          <dt>
+            서비스 시나리오 개발.
+          </dt>
+          <dd>
+            <p>
+              <span class="highlight">도출된 서비스 컨셉을 검증하기 위해 모빌리티 서비스 이용경험 변화에 따른 서비스 시나리오를 개발하여 경험 시뮬레이션을 진행하였습니다.</span> 경험 시뮬레이션은 실제 서비스와 유사한 실험 환경을 구현하고 실험 참가자로 하여금 직접 서비스를 체험하게 하여 그 반응으로부터 시사점을 얻을 수 있는 방법입니다. <br>
+              실험에 사용할 사용 시나리오는 프로토타입 구현 가능성, 연구의 연관성 정도를 고려하여 '컨텍스트를 고려한 예약 & 사용', '서비스 제공', '맞춤 정보 제공'의 세 가지로 구체화하였고, 시나리오를 프로토타입으로 구현하기 위해 필요한 스토리보드(Story Board)를 작성하였습니다. <br>
+            </p>
+          </dd>
+          <div class="row" id="thesis_8">
+            <div class="column">
+              <a target="_blank" href="images/thesis_8a.png">
+              <img src="images/thesis_8a.png">
+              </a>
+            </div>
+            <div class="column">
+              <a target="_blank" href="images/thesis_8b.png">
+              <img src="images/thesis_8b.png">
+              </a>
+            </div>
+            <div class="column">
+              <a target="_blank" href="images/thesis_8c.png">
+              <img src="images/thesis_8c.png">
+              </a>
+            </div>
+          </div>
+        </dl>
+      </div>
+      <div class="body-content">
+        <dl>
+          <dt>
+            경험 시뮬레이션과 서비스 개선 기회요소.
+          </dt>
+          <dd>
+            <p>
+              완성된 시나리오를 실험으로 검증하기 위해 5명의 참가자를 선발, 경험 시뮬레이션을 진행하였습니다. 실험은 사전 설문, 사전 태스크 수행, 차량 탑승 및 태스크 수행, 사후 인터뷰, 결과 분석의 단계로 진행하였습니다. <br>
+              경험 시뮬레이션은 시나리오 3개를 모두 경험할 수 있도록 설계하였습니다. 실험 과정에서 필요한 UI화면들은 Sketch, Framer 등의 프로토타입 툴을 활용해 제작된 프로토타입으로 진행하였으며, 실제 차량을 탑승한 후 차량 내에서 이루어지는 인터랙션은 Wizard of Oz 방법을 사용하여 운전자가 없는 환경을 가정하고 진행되었습니다. 이 과정에서 피험자는 Think Aloud 기법을 통해 생각을 나타내도록 하였으며, 모든 과정은 차량 내에 설치된 액션캠과 캠코더로 녹화되었습니다. <br>
+              실험 절차를 마친 후 시나리오별 만족도를 객관적인 방법으로 측정하기 위해 감정 분석을 수행하였습니다. 감정 분석 방법은 실험 진행 중 캠코더를 통해 포착된 피험자의 얼굴에서 드러나는 표정을 Microsoft Emotion API를 활용해 측정하는 방법입니다. 이 방법을 통해 사용자들이 서비스 시나리오에 높은 만족도를 나타냈음을 확인할 수 있었습니다. <br>
+              감정 분석 기법과 더불어 정성적인 데이터 수집을 위해 사후 인터뷰를 수행하였으며, 이를 통해 서비스 개선의 기회요소를 도출할 수 있었습니다. 이는 향후 자율주행 환경의 사용자 경험을 디자인하는 데 참고가 될 수 있을 것입니다.<br>
+              먼저, 시스템의 변화에 대해 사용자가 명확한 피드백을 받을 수 있어야 합니다. 자율주행차의 탑승자는 상황을 주시할 필요가 없기 때문에 신호 변경으로 인한 갑작스러운 급제동과 같은 돌발 상황에 더 큰 불안감을 느낄 수 있습니다. 이러한 우려를 불식시키기 위해서는 신호체계와의 연계를 통해 위험 상황을 예방하거나, 탑승자가 상황에 대한 모니터링이 가능하도록 다른 차량과의 거리, 도로 환 경 등을 시각적으로 보여주는 방법을 고려할 수 있습니다.<br>
+              둘째, 사용자는 차량을 제어할 수 있는 채널에 언제든지 접근 가능해야 하며, 이 채널은 학습하기에 매우 용이하게 디자인되어야 할 것입니다. 실험에서 수행한 시나리오에서는 객석에 비치된 태블릿 PC가 차량의 인포테인먼트 시스템을 조절하는 채널로 설정되었으나, 실제로는 개인이 가진 스마트폰 또는 음성 인식과 같이 좀 더 접근하기 편리한 수단들이 적극 활용되어야 할 것입니다.<br>
+              셋째, 드라이빙의 즐거움을 빼앗긴 운전자들이 이동 시간을 지루하게 느끼지 않도록 차량 공간에 대한 섬세한 고민이 필요합니다. 사용자는 차량 내에서 인포테인먼트 시스템으로 영화를 볼 수도 있고, 부족한 잠을 청할 수도 있을 것입니다. 또한 친구들과 함께 탑승해 여행을 떠나는 길이라면 다른 사람과 소통이 가능한 사회적 공간으로서의 차량 공간이 제공되어야 합니다. 이처럼 자율주행 환경의 차량 내부는 사용자들의 다양한 이용 맥락에 따라 다양한 욕구를 충족시킬 수 있는 맞춤형 환경을 제공해야 할 것입니다.<br>
+            </p>
+          </dd>
+          <div class="row" id="thesis_9">
+            <div class="column">
+              <a target="_blank" href="images/thesis_9a.png">
+              <img src="images/thesis_9a.png">
+              </a>
+            </div>
+            <div class="column">
+              <a target="_blank" href="images/thesis_9b.png">
+              <img src="images/thesis_9b.png">
+              </a>
+            </div>
+            <div class="column">
+              <a target="_blank" href="images/thesis_9c.png">
+              <img src="images/thesis_9c.png">
+              </a>
+            </div>
+          </div>
+        </dl>
+      </div>
+      <div class="body-content">
+        <dl>
+          <dt>
+            서비스 블루프린트와 실무적 과제 도출.
+          </dt>
+          <dd>
+            <p>
+              경험 시뮬레이션 과정을 통해 검증된 사용자 시나리오를 구현하기 위한 서비스 블루프린트(Service Blueprint)를 도출하였습니다. <br>
+              작성한 서비스 블루프린트를 관찰, 분석함으로써 자율주행 환경의 서비스 시나리오 구현 시 실무적으로 고민이 필요한 과제들을 도출하였습니다. <br><br>
+              <b>연결성 확보를 위한 인프라스트럭쳐 구축</b><br>
+              앞서 살펴본 바와 같이 완성 단계의 자율주행차는 다른 차량, 교통 체계 등과 연결되는 것을 기술적 전제로 합니다. 본 서비스 블루프린트에서도 예상 이동 시간을 계산해 미리 출발하고, 제휴점(음식점)에 예상 도착 시간을 통보하는 인터랙션을 묘사하였는데, 이와 같은 기능 구현을 위해서는 자율주행차가 도로의 신호 체계와 연동되어 정확한 이동 시간을 계산할 수 있도록 기술적, 제도적 정비가 필요할 것입니다.<br><br>
+              <b>위치기반 식별 및 결제 기술 확보</b><br>
+              무인 운행의 장점을 살려 차량이 사용자를 대신해 음식물 등 재화를 구입하고 수령하기 위해서는 차량의 식별이 가능한 수준으로 정밀하게 위치를 측정할 수 있어야 하며, 이를 기반으로 결제가 이루어져야 합니다. 이와 같은 환경을 구축하기 위해서는 정확한 위치 측위 기술과 이를 통한 차량 식별 및 결제 시스템의 개발이 필요하다. 현재 블루투스 비콘(Beacon) 등 무선 인식 기술은 상대적으로 저렴한 가격으로 위치 측정이 가능하나 주유소의 주유기나 주차장의 주차면과 같이 밀집된 공간에서 정확한 위치의 구별이 필요한 경우 식별 오류가 발생할 가능성이 있습니다. 따라서 이러한 한계를 극복할 수 있는 기술적 발전 또 는 대안적인 방법을 확보해야 합니다.<br><br>
+              <b>전장 시스템의 사용자 경험에 대한 고민</b><br>
+              자율주행 환경의 자동차에서는 AVN(Audio, Video, Navigation) 시스템을 비롯한 전장의 중요성이 강조될 것입니다. 차량과 사용자 간의 인터랙션은 차량 내의 디스플레이와 오디오 입/출력을 통해 이루어질 것이며, 운전으로부터 자유로워진 사용자들은 차량 안에서 영화 감상, 게임 등 엔터테인먼트 시스템을 이용할 수 있기를 기대할 것이기 때문입니다. 따라서 이러한 인터랙션과 서비스 제공이 가능한 차량 내 전장 시스템에 대한 고민 또한 선행되어야 합니다.<br><br>
+              <b>개인화 데이터 가공을 위한 솔루션 개발</b><br>
+              상품 추천 서비스와 같이 자율주행 환경에 맞는 개인화 서비스를 제공하기 위해서는 개인의 라이프 로그 데이터를 수집하여 이를 분석, 가공하여 최적화 된 서비스를 제공할 수 있어야 합니다. 이러한 데이터 처리에 기반이 되는 솔루션의 품질이 사용자 경험의 차이를 만들게 될 것이므로 완성도 있는 서비스 제공을 위해서는 솔루션의 확보와 개발에도 투자가 필요합니다.
+            </p>
+          </dd>
+          <a target="_blank" href="images/thesis_10a.jpg">
+            <img src="images/thesis_10a.jpg" alt="service blueprint of future mobility service">
+        </a>
+        </dl>
+      </div>
+      <div class="body-content">
+        <dl>
+          <dt>
+            결론 및 향후 연구 과제.
+          </dt>
+          <dd>
+            <p>
+              이 연구는 자율주행 환경에서 모빌리티 서비스의 사용자 경험이 어떻게 변화할 것인가에 초점을 맞추어, 현재의 모빌리티 서비스와 그 사용자, 미래 자율주행 환경에서 예상되는 모빌리티 서비스를 병렬적으로 분석하였으며, 사용자 가치를 바탕으로 자율주행 환경의 모빌리티 서비스를 경험 시뮬레이션 방법을 통해 제시하였습니다. <br>
+              자율주행차의 상용화, 대중화를 위한 한계점들이 극복되고 나면 사용자들이 모빌리티를 이용하는 방법이 지금까지와는 현저하게 달라질 것입니다. 이에 따라 자율주행 환경의 사용자 경험에 대해서도 지속적으로 관심을 가지고 연구해야 할 주제입니다. 이번 연구의 결과를 바탕으로 향후에는 자율주행 환경에 적합한 사용자 가치를 구체적으로 정의하고, 자율주행차와 사용자 간의 인터랙션이 일어나는 Touch Point에 대한 면밀한 연구를 수행하고 싶습니다.
+            </p>
+          </dd>
+          <img src="images/thesis_11a.png" alt="reference for future mobility service">
+        </dl>
+      </div>
+      <div class="footer-area">
+        <img src="images/thesis_footer.jpg">
+        <div class="footer-content">
+          <dl>
+            <dt>Product</dt><dd>A Master's Thesis</dd>
+            <dt>Type</dt><dd>Mobility</dd>
+            <dt>Institute</dt><dd>Korea University</dd>
+          </dl>
+          <dl>
+            <dt>Project</dt><dd>A Research on Mobility Service</dd>
+            <dt>Role</dt><dd>Research</dd>
+            <dt>Contribution</dt><dd>100%</dd>
+            <dt>Duration</dt><dd>2016.9 - 2017.06</dd>
+          </dl>
+          <span class="footer-link-box">
+            <p>원문보기</p>
+            <a href="http://www.riss.kr/link?id=T14549814" target="_blank">
+              <img src="images/riss_logo.png" alt="한국교육학술정보원" style="width:64px">
+            </a>
+          </span>
+        </div>
+      </div>
+    <!-- </div> -->
+  </body>
+</html>

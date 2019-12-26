@@ -270,6 +270,9 @@ p{
   /* background-position: 50% 95%; */
   /* background-repeat: no-repeat; */
 }
+#thesis{
+  background-image: url('images/thesis_footer.jpg');
+}
 
 /* ===== hover 시 효과 ===== */
 .overlay {
