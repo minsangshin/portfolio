@@ -270,6 +270,9 @@ p{
   /* background-position: 50% 95%; */
   /* background-repeat: no-repeat; */
 }
+#hyundai-card-web{
+  background-image: url('images/hccweb_8.png');
+}
 #thesis{
   background-image: url('images/thesis_footer.jpg');
 }

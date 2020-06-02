@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="shortcut icon" href="images/bulb.png" />
+    <link rel="apple-touch-icon" href="images/bulb.png" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-143577324-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-143577324-1');
+    </script>
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>Minsang Shin Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <!-- top button -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <script>
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+      } else {
+        document.getElementById("myBtn").style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
+    <!-- <div class="w-container"> -->
+      <div class="hero-area" id="ha-digitalhcc">
+        <div class="hero-content-container">
+          <span class="back"><a href="index.html"><img src="images/arrow_back_bk.png" alt="move back"></a></span>
+          <span class="project-icon"><img src="images/hcc_logo.png" alt="hyundai card logo" width="200px"></span>
+          <p class="hero-text">가장 개인적이면서도,<br>가장 보편적인 디지털 채널 디자인.</p>
+          <div class="project-name">Hyundai Card Web</div>
+        </div>
+      </div>
+
+      <!-- <div class="mezzanine-area">
+        <div class="title_small">Achievement Highlights
+          <span class="tooltip">
+            <span class="tooltiptext">2019.5 한국리서치 조사</span>
+          </span>
+          <script>
+          // pc, mobile 둘 다 클릭해서 팝업 띄우도록
+          $(".tooltip").click(function(){
+            $(".tooltiptext").toggle();
+          });
+          </script>
+        </div>
+        <div class="ah-container">
+          <div class="ah-item">
+            <p class="ah-figure">90%&nbsp;</p>
+            <p class="ah-caption">만족도</p>
+          </div>
+          <div class="ah-item">
+            <p class="ah-figure">90%&nbsp;</p>
+            <p class="ah-caption">재방문 의향</p>
+          </div>
+          <div class="ah-item">
+            <p class="ah-figure">81%&nbsp;</p>
+            <p class="ah-caption">브랜드 인식에 긍정적 영향</p>
+          </div>
+        </div>
+      </div> -->
+
+      <div class="body-content">
+        <dl>
+          <dt>
+            Long Live the Web!
+          </dt>
+          <dd>
+            <p>
+              사람들은 웹을 진부하다고 생각하지만, 여전히 많은 사람들에게 가장 주요한 비대면 채널은 웹입니다. 프로젝트를 진행할 당시(2016년), 현대카드가 고객과 소통하는 가장 주요한 접점은 콜센터도, 앱도 아닌 바로 메인 홈페이지였습니다. 2013년에 개편된 현대카드 홈페이지는 '파격=현대카드'라는 공식에 맞게, Metro UI를 차용한 최초의 금융사 웹사이트였습니다. 그러나 파격적인 형식에만 너무 집착한 나머지, 정작 사용자는 어디에도 없었습니다. 사각형의 타일들은 기계적인 Grid에만 맞게 배열되어 있었고, 어떤 것은 움직이고, 어떤 것들은 그렇지 않고, 어떤 것들은 버튼이기도, 아니기도 했습니다. 이러한 문제적 채널을 사용자 친화적으로 바꾸는 일, 금융 UX 전문가가 나서야 할 차례였습니다.
+            </p>
+          </dd>
+          <img src="images/hccweb_1.png" alt="as-is">
+        </dl>
+      </div>
+      <div class="body-content">
+        <dl>
+          <dt>
+            메인 채널의 조건.
+          </dt>
+          <dd>
+            <p>
+              우리는 멋진 디자인 컨셉을 넘어서 사용자들의 컨텍스트에 맞는, 기능적인 디지털 채널을 만들고자 했습니다. 처음에는 디자이너의 눈높이에서, 주요 사용자에게 불필요한 모든 것을 걷어내고 싶었습니다. 그러나 금융사의 메인 채널은 사용자인 외부 고객과, 회사 내의 이해관계자인 내부 고객 모두를 고려하여 설계되어야 합니다. 회사 안에는 디자인 부서만 있는 것이 아닙니다. 금융상품을 마케팅하는 부서도 있고, 연체를 줄이는 것이 목표인 곳도 있고, 규제기관의 지시를 받아 이를 공지해야 하는 부서도 있고, 고객센터로 걸려오는 전화 건수를 줄여서 비용을 절감하는 것이 KPI인 담당자도 있습니다. 이 수많은 이해관계자들의 요구사항을 취합하고, 이로부터 정보구조와 기능을 도출하고, 모두가 만족할 수 있는 채널을 설계하는 일이 바로 UX 디자이너의 역할이었습니다.
+            </p>
+          </dd>
+        </dl>
+      </div>
+      <div class="body-content">
+        <dl>
+          <dt>
+            Context, Context, Context..
+          </dt>
+          <dd>
+            <p>
+              수 많은 기능과 정보들을 줄여나가는 것에 현실적인 한계가 있었지만, 이러한 제약 조건에서도 좋은 서비스가 나올 수 있다는 믿음으로 프로젝트를 시작했습니다. 다행히도 모든 사용자들이 모든 기능과 정보를 필요로하는 것은 아니기 때문에, 우리는 <span class="highlight">사용자들의 맥락을 고려하여 원하는 것을 알아서 보여주고, 어떤 사용자가 보고 있는지에 따라 유연하게 반응하는 채널을 만들기로 했습니다. </span><br>
+              이를 위해 메인화면은 사용자들의 다양한 이용 맥락을 모두 만족시킬 수 있는 레이아웃을 채택하였으며, 상세 페이지들은 복잡한 숫자와 어려운 금융 용어들 속에서 사용자들이 필요한 정보만 쉽게 소비할 수 있도록 핵심 정보를 최대한 강조해서 보여주도록 설계하였습니다. 또한 로그인 전/후의 이용 행태가 다르다는 점에 착안해 로그인 여부에 따라 다른 화면이 제공되도록 하였으며 사용자들이 홈페이지에서 필요한 모든 정보와 기능을 찾을 수 있도록 현재 소비하고 있는 정보와 연관된 메뉴들을 제공하여 지속적인 탐색이 이루어지도록 하였습니다. 또한 초보적인 수준이었던 검색 기능도 어떤 키워드를 입력했느냐에 따라 맞춤형 검색 결과를 보여주도록 설계하였고, 현대카드의 주력 상품인 카드상품은 꼭 갖고 싶은 멋진 제품을 보는 것처럼 시각적인 내러티브로 풀어내기로 하였습니다.
+            </p>
+          </dd>
+          <a target="_blank" href="images/hccweb_3.png">
+            <img src="images/hccweb_3.png" alt="ux concept">
+        </a>
+        </dl>
+      </div>
+      <div class="body-content">
+        <dl>
+          <dt>
+            More Personal.
+          </dt>
+          <dd>
+            <p>
+              앞서 제시한 UX 컨셉을 보여주는 대표적인 화면이 메인화면입니다. 로그인이라는 사용자의 액션은 가장 그 목표가 명확한 행동인데, 특히 내밀한 정보를 품고 있는 금융 서비스는 로그인 여부에 따라서 제공할 수 있는 기능과 정보가 완전히 나뉘게 됩니다. 로그인 없이 현대카드 웹을 탐색하는 사람이라면 우리 회사의 상품과 서비스를 찾아보고 싶어할 것이고, 로그인을 한 사용자라면 아마도 이번 달 카드값이 궁금해서 왔을 가능성이 클 것이기 때문이죠. 따라서 <span class="highlight">로그인 전에는 모든 서비스를 한 눈에 볼 수 있는 카탈로그로, 로그인 후에는 완벽하게 개인화된 대시보드</span>가 되도록 메인화면을 설계했습니다.
+            </p>
+          </dd>
+          <a target="_blank" href="images/hccweb_4.png">
+            <img src="images/hccweb_4.png" alt="main">
+        </a>
+        </dl>
+      </div>
+      <div class="body-content">
+        <dl>
+          <dt>
+            More Engaged.
+          </dt>
+          <dd>
+            <p>
+              비슷비슷해 보이는 200종 이상의 카드. 이처럼 <span class="highlight">혜택을 시각화하기 힘든 금융상품을 매력적인 제품으로 풀어내기 위해 우리는 시각적 요소에 집중했습니다.</span> 데이터를 통해 대부분의 PC 사용자들이 1440픽셀 이상의 해상도를 가진 스크린을 사용한다는 것을 알고 있었고, 이 스크린의 너비를 최대로 활용하여 시각적인 내러티브가 느껴지도록 200여종 카드의 상품 페이지를 구성하였습니다.
+            </p>
+          </dd>
+          <a target="_blank" href="images/hccweb_5.png">
+            <img src="images/hccweb_5.png" alt="card">
+        </a>
+        </dl>
+      </div>
+      <div class="body-content">
+        <dl>
+          <dt>
+            Simple Task.
+          </dt>
+          <dd>
+            <p>
+              메뉴 카테고리를 통해 모든 기능에 접근하기를 어렵게 느끼는 사람들도 있기 때문에, 방문 목적이 명확한 사람들은 검색을 활용합니다. 이러한 사용자들이 <span class="highlight">최소한의 노력으로 정보 탐색의 목적을 달성할 수 있도록, 자주 찾는 결과는 보기 좋게, 정보의 배열은 자연스럽게</span> 제공되도록 검색 기능을 구현하였습니다.
+            </p>
+          </dd>
+          <a target="_blank" href="images/hccweb_6.png">
+            <img src="images/hccweb_6.png" alt="search">
+        </a>
+        </dl>
+      </div>
+      <div class="body-content">
+        <dl>
+          <dt>
+            리서치를 통한 검증.
+          </dt>
+          <dd>
+            <p>
+              <span class="highlight">프로젝트의 마일스톤마다 사용자 리서치를 수행하여 기획을 검증하고 개선점을 찾는 것도 UX 디자인의 필수적인 과정이라고 생각합니다.</span> 프로토타입과 Eye-tracking 장비를 활용한 수용도 조사를 통해 우리의 기획 의도와 사용자가 서비스를 이용하는 방식이 일치하는지 확인하였고, Quick Fix가 가능한 부분은 반영시켜 마지막까지 서비스의 완성도를 끌어올리는 것도 UX 디자이너의 몫입니다. <br>
+              런칭 이후에는 지표에 관심을 두고 꾸준히 확인하면서, 리뉴얼된 카드/금융상품 신청 프로세스에서 일부 고객의 이탈을 발견하였고 Usability Test를 통해 이탈 지점 및 원인을 파악하여, 이를 개선하는 작업도 수행하였습니다.
+            </p>
+          </dd>
+          <a target="_blank" href="images/hccweb_7.png">
+            <img src="images/hccweb_7.png" alt="research">
+        </a>
+        </dl>
+      </div>
+      <div class="body-content">
+        <dl>
+          <dt>
+            When Usability Meets Business.
+          </dt>
+          <dd>
+            <p>
+              저는 사용자를 위한 원칙이 비즈니스의 원칙과 상반된다고 생각하지 않습니다 - UX디자인은 작품 활동이 아니기 때문입니다. 비즈니스의 원칙을 반하는 디자인이 있다면 그것이 아무리 편리한 UX라 할지라도 최선이라고 할 수 없을 것입니다. <span class="highlight">금융 서비스는 다양한 이해관계자의 요구사항을 충족시키면서도, 쉽고 간편하게 설계되어야 합니다.</span><br>
+              현대카드 웹 리뉴얼 오픈 이후, 고객센터의 콜 인입량에 유의미한 감소를 확인하였으며 이로서 사용자에게도 좋은 채널 설계가 비즈니스에도 도움이 된다는 사실을 증명할 수 있었습니다.
+            </p>
+          </dd>
+          <img src="images/hccweb_8.png" alt="to-be">
+        </dl>
+      </div>
+      <div class="footer-area">
+        <img src="images/hccweb_footer.png">
+        <div class="footer-content">
+          <dl>
+            <dt>Product</dt><dd>Hyundai Card Web</dd>
+            <dt>Type</dt><dd>Web (Mobile/PC)</dd>
+            <dt>Company</dt><dd>Hyundai Card</dd>
+          </dl>
+          <dl>
+            <dt>Project</dt><dd>현대카드웹 리뉴얼</dd>
+            <dt>Role</dt><dd>UX Design</dd>
+            <dt>Contribution</dt><dd>30%</dd>
+            <dt>Duration</dt><dd>2016.2 - 2016.10</dd>
+          </dl>
+          <span class="footer-link-box">
+            <p>Website</p>
+            <a href="https://www.hyundaicard.com" target="_blank" id="weblink">
+              ↗︎&nbsp;바로가기
+            </a>
+          </span>
+        </div>
+      </div>
+    <!-- </div> -->
+  </body>
+</html>
